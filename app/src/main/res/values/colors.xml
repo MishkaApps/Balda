@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cellBackground">#FFEBEE</color>
+    <color name="inFocusBackground">#ffcce9c4</color>
+    <color name="letterAddedInWord">#ffaab4e6</color>
+    <color name="newLetter">#ffe6e4a3</color>
+    <color name="gameFieldBackground">#ffd2d2d2</color>
+    <color name="outOfFocusBackground">#D2D2D2</color>
+    <color name="scoreTitleBackground">#ffaa96b4</color>
+
+    <color name="textColor">@color/button_material_dark</color>
+    <color name="textColorWhite">@color/button_material_dark</color>
+    <!--<color name="textColorWhite">@color/button_material_light</color>-->
+
+    <!--<color name="darkGrayAppColor">#ff878781</color>-->
+    <!--<color name="lightGrayAppColor">#ff9b9b9b</color>-->
+
+
+
+
+    <color name="darkGrayAppColor">#ffbebeb8</color>
+    <color name="lightGrayAppColor">#ffcdcdcd</color>
+
+    <color name="separator_color">#ff5a595b</color>
+
+    <color name="transparent">#ffffff</color>
+    <color name="activityBackground">#ffffffff</color>
+    <color name="active_player_background">#ff81c06b</color>
+    <color name="not_active_player_background">@color/darkGrayAppColor</color>
+    <color name="wait_layout_background">#82ffffff</color>
+
+
+</resources>

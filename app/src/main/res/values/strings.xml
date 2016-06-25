@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Балда</string>
+    <string name="first_word">ПЕРВОЕ СЛОВО</string>
+    <string name="string_players">ИГРОКИ</string>
+    <string name="string_player_1">ИГРОК 1:</string>
+    <string name="string_player_2">ИГРОК 2:</string>
+    <string name="button_ok">ОК</string>
+    <string name="button_delete_word">СТЕРЕТЬ</string>
+    <string name="text_view_name1">ИМЯ 1</string>
+    <string name="text_view_name2">ИМЯ 2</string>
+    <string name="alert_dialog_msg_word_has_been_used">Слово уже использованно</string>
+    <string name="alert_dialog_msg_word_dont_exist">Введенного слова нет в словаре\nЗасчитать его?</string>
+    <string name="alert_dialog_btn_pos_button">Да</string>
+    <string name="alert_dialog_btn_neg_button">Нет</string>
+    <string name="alert_dialog_game_over_title">Игра окончена</string>
+    <string name="alert_dialog_msg_player_wins_part1">Игрок&#160;</string>
+    <string name="alert_dialog_msg_player_wins_part2">&#160;одержал победу!</string>
+    <string name="alert_dialog_msg_nobody_wins">Никто не вин</string>
+    <string name="alert_dialog_unknown_word">Значение слова не известно</string>
+    <string name="toast_tap_again">Тапните еще раз..</string>
+    <string name="instruction_of_using">Проведите пальцем справа налево, чтобы посмотреть счет и использованные слова</string>
+    <string name="score_fragment_title">ИСПОЛЬЗОВАННЫЕ СЛОВА</string>
+    <string name="game_with_man">ПРОТИВ ЧЕЛОВЕКА</string>
+    <string name="game_with_computer">ПРОТИВ КОМПЬЮТЕРА</string>
+    <string name="settings">НОВАЯ ИГРА</string>
+    <string name="time_for_move">ВРЕМЯ НА ХОД:</string>
+    <string name="seconds">СЕКУНД</string>
+    <string name="without_time">БЕЗ ВРЕМЕНИ</string>
+    <string name="minutes">МИНУТ</string>
+    <string name="additionalSettings">ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ</string>
+    <string name="string_game_mode">РЕЖИМ ИГРЫ:</string>
+    <string name="game_difficulty">СЛОЖНОСТЬ ИГРЫ:</string>
+    <string name="user_voc_file_name">user_voc</string>
+    <string name="alert_dialog_start_game_warning_message">Приготовьтесь начать свой ход</string>
+    <string name="alert_dialog_move_beginning_button_start">Начать</string>
+    <string name="alert_dialog_next_player_warning_message">Слеующий игрок приготовьтесь начать ход</string>
+    <string name="alert_dialog_time_over_next_player_warning_message">Предыдущий игрок пропускает ход</string>
+    <string name="computer_name">КОМПЬЮТЕР</string>
+    <string name="recent_names_filename">recent_names</string>
+
+    <string name="menu_item_user_voc">Словарь пользователя</string>
+    <string name="menu_item_app_rules">Правила</string>
+    <string name="menu_item_about_app">О приложении</string>
+
+
+
+    <string name="app_rules">Игровое поле представляет из себя 25 клеток расположенных в 5 рядов и 5 столбцов, и в начале игры содержит первое слово из пяти букв\n\n<b>ИГРОВОЙ ПРОЦЕСС</b>\n\nЗадача игрока во время хода - сначала поставить новую букву в одну из пустых клеток, затем ввести слово содержащее эту букву\n\nПри вводе новой буквы необходимо руководствоваться следующими правилами:\n- буква ставится в не занятую клетку\n- ячейка с новой буквой должна граничить хотя бы с одной заполненной ячейкой по вертикали или горизонтали\n\nДалее составляется слово по следующим правилам:\n- ячейки содержащие соседние буквы слова, должны граничить по горизонтали или по вертикали\n- одну и ту же ячейку нельзя использовать дважды за ход\n- обязательно использование новой буквы, введенной игроком\n- новое слово должно быть отличным от ранее использованныхn\n\n<b>ПОДСЧЕТ ОЧКОВ</b>\n\nЗа каждое введенное слово игрок получает очки, количество которых равно количеству букв в введенном слове\n\n<b>КОНЕЦ ИГРЫ</b>\n\nИгра заканчивается, когда становятся заняты все клетки или оба игрока по разу пропускают ход\n\nОдерживает победу игрок с наибольшим количеством очков\n
+          </string>
+
+    <string name="about">Приложение \"<b>Балда</b>\" предоставляет возможность играть как в одиночку с компьютером, так и с другим человеком\n\n<b>НАСТРОЙКИ</b>\n\nБольшое количество игровых параметров позволяет гибко настраивать игровой процесс\nДоступные для изменения параметры:\n- начальное слово ( можно ввести самому или выбрать из уже существующих, нажав на кнопку со стрелочками рядом с полем ввода )\n- имена игроков \n- режим игры ( против компьютера или против человека )\n- сложность игры ( в режиме игры против компьютера )\n- временные ограничения на ход ( в режиме игры против человека )\n\n<b>ИГРА</b>\n\nВверху игрового экрана отображаются имена игроков с соответствующими им баллами, набранными по ходу игры\n\nВ середине находится само игровое поле, а под ним поле отображающее введенное слово и три кнопки.\n\nКнопка <b>"Сбросить"</b> - сбрасывает выделенные ячейки и вставленные буквы\nКнопка с изображением стрелки - пропуск хода\nКнопка "<b>ОК</b>" - подтверждает ввод выбранного слова\n\nДля просмотра введенных слов сделайте свайп справа налево\nДля установки паузы во время игры на время - нажмите на таймер\n\n<b>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</b>\n\nРазработчик: <b>Mishka Apps</b>\nПри возникновении любых вопросов или некорректной работе приложения просим писать по адресу:  MishkaApps@gmail.com\n"</string>
+
+    <string-array name="time_list">
+        <item>30 СЕКУНД</item>
+        <item>1 МИНУТА</item>
+        <item>2 МИНУТЫ</item>
+        <item>@string/without_time</item>
+    </string-array>
+
+    <string-array name="difficulty_list">
+        <item>ЛЕГКО</item>
+        <item>НОРМАЛЬНО</item>
+        <item>СЛОЖНО</item>
+    </string-array>
+
+</resources>

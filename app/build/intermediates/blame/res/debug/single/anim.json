@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bckspce_disap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\bckspce_disap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dif_stgs_disap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\dif_stgs_disap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bckspce_ap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\bckspce_ap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\time_stgs_ap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\time_stgs_ap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\kbrd_disap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\kbrd_disap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\swap_ap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\swap_ap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\kbrd_ap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\kbrd_ap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\btn_ok_disap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\btn_ok_disap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\finger_drag.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\finger_drag.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\time_stgs_disap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\time_stgs_disap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\wait_anim.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\wait_anim.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\under_kbrd_disap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\under_kbrd_disap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\update_word_anim.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\update_word_anim.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dif_stgs_ap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\dif_stgs_ap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\under_kbrd_ap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\under_kbrd_ap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\btn_ok_ap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\btn_ok_ap.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\anim\\swap_disap.xml",
+        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\anim\\swap_disap.xml"
+    }
+]

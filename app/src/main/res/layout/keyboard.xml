@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/activityBackground">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/key_a"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="А"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_b"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Б"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_v"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="В"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_g"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Г"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_d"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Д"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_e"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Е"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_zh"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Ж"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_z"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="З"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0.5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/key_i"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="И"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_j"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Й"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_k"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="К"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_l"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Л"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_m"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="М"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_n"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Н"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_o"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="О"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="0.5dp" />
+
+            <Button
+                android:id="@+id/key_p"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="П"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="0.5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"> <Button
+            android:id="@+id/key_r"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Р"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_s"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="С"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_t"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Т"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_u"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="У"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_f"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ф"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_kh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Х"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_ts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ц"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_ch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ч"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/key_sh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ш"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_shch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Щ"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_ss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ь"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_y"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ы"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_hs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ъ"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_re"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Э"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_yu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ю"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="1dp" />
+
+            <Button
+                android:id="@+id/key_ya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Я"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="1dp" /></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
