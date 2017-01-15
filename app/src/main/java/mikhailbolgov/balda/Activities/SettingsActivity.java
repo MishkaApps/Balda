@@ -695,6 +695,8 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                         intent = new Intent(thisActivity, AboutActivity.class);
                     } else if (title.equals(resources.getString(R.string.menu_item_app_rules))) {
                         intent = new Intent(thisActivity, RulesActivity.class);
+                    } else if (title.equals(resources.getString(R.string.menu_item_app_settings))){
+                        intent = new Intent(thisActivity, AppSettingsActivity.class);
                     }
                     startActivity(intent);
                     return false;

@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
         "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]

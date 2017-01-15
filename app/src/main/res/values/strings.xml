@@ -37,10 +37,13 @@
     <string name="alert_dialog_time_over_next_player_warning_message">Предыдущий игрок пропускает ход</string>
     <string name="computer_name">КОМПЬЮТЕР</string>
     <string name="recent_names_filename">recent_names</string>
+    <string name="background_color">ФОН</string>
+    <string name="buttons_headers_color">ЭЛЕМЕНТЫ ИНТЕРФЕЙСА</string>
 
     <string name="menu_item_user_voc">Словарь пользователя</string>
     <string name="menu_item_app_rules">Правила</string>
     <string name="menu_item_about_app">О приложении</string>
+    <string name="menu_item_app_settings">Настройки</string>
 
 
 
@@ -61,5 +64,8 @@
         <item>НОРМАЛЬНО</item>
         <item>СЛОЖНО</item>
     </string-array>
+
+
+    <string name="letter_B">Б</string>
 
 </resources>

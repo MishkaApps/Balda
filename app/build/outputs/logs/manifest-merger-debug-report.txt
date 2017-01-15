@@ -1,73 +1,77 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:3:5-34
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
 	android:versionCode
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:6:5-27:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Android Projects\Balda\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] C:\Android Projects\Balda\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:7:5-28:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Android_Projects\Balda\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] C:\Android_Projects\Balda\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:9:9-41
 	android:icon
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:7:9-45
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:8:9-45
 	android:theme
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:9:9-40
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:10:9-40
 activity#mikhailbolgov.balda.Activities.SettingsActivity
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:10:9-20:20
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:11:9-20:20
 	android:label
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:12:13-45
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:13:13-45
 	android:windowSoftInputMode
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:13:13-67
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:14:13-67
 	android:name
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:11:13-56
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:12:13-56
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:18:27-74
 activity#mikhailbolgov.balda.Activities.GameActivity
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:21:9-23:53
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:21:9-23:54
 	android:label
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:23:13-51
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:23:13-51
 	android:name
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:22:13-52
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:22:13-52
 activity#mikhailbolgov.balda.Activities.UserVocabulary
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:24:9-63
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:24:9-63
 	android:name
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:24:19-60
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:24:19-60
 activity#mikhailbolgov.balda.Activities.AboutActivity
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:25:9-62
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:25:9-62
 	android:name
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:25:19-59
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:25:19-59
 activity#mikhailbolgov.balda.Activities.RulesActivity
-ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:26:9-71
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:26:9-62
 	android:name
-		ADDED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml:26:19-59
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:26:19-59
+activity#mikhailbolgov.balda.Activities.AppSettingsActivity
+ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:27:9-77
+	android:name
+		ADDED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml:27:19-65
 uses-sdk
-INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Android Projects\Balda\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] C:\Android Projects\Balda\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Android_Projects\Balda\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Android_Projects\Balda\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Android Projects\Balda\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android_Projects\Balda\app\src\main\AndroidManifest.xml

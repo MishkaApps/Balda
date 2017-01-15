@@ -4,5 +4,6 @@
     <item android:title="@string/menu_item_user_voc"></item>
     <item android:title="@string/menu_item_app_rules"></item>
     <item android:title="@string/menu_item_about_app"></item>
+    <item android:title="@string/menu_item_app_settings"></item>
 
 </menu>

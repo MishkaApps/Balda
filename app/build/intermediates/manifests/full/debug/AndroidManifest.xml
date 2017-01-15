@@ -28,6 +28,7 @@
         <activity android:name="mikhailbolgov.balda.Activities.UserVocabulary" />
         <activity android:name="mikhailbolgov.balda.Activities.AboutActivity" />
         <activity android:name="mikhailbolgov.balda.Activities.RulesActivity" />
+        <activity android:name="mikhailbolgov.balda.Activities.AppSettingsActivity" />
     </application>
 
 </manifest>

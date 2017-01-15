@@ -30,4 +30,16 @@
     <color name="wait_layout_background">#82ffffff</color>
 
 
+    <color name="app_background_color_1">#ffffff</color>
+    <color name="app_background_color_2">#424242</color>
+    <color name="app_background_color_3">#4e342e</color>
+    <color name="app_background_color_4">#1b5e20</color>
+
+
+    <color name="app_elements_color_1">#ffffff</color>
+    <color name="app_elements_color_2">#ffbebeb8</color>
+    <color name="app_elements_color_3">#3e2723</color>
+    <color name="app_elements_color_4">#212121</color>
+
+
 </resources>
