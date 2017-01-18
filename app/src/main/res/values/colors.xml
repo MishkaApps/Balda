@@ -9,7 +9,7 @@
     <color name="scoreTitleBackground">#ffaa96b4</color>
 
     <color name="textColor">@color/button_material_dark</color>
-    <color name="textColorWhite">@color/button_material_dark</color>
+    <color name="textColorWhite">#eaeadf</color>
     <!--<color name="textColorWhite">@color/button_material_light</color>-->
 
     <!--<color name="darkGrayAppColor">#ff878781</color>-->
@@ -40,6 +40,11 @@
     <color name="app_elements_color_2">#ffbebeb8</color>
     <color name="app_elements_color_3">#3e2723</color>
     <color name="app_elements_color_4">#212121</color>
+
+    <color name="game_fields_color_1">#bcaaa4</color>
+    <color name="game_fields_color_2">#b0bec5</color>
+    <color name="game_fields_color_3">#4e342e</color>
+    <color name="game_fields_color_4">#000000</color>
 
 
 </resources>

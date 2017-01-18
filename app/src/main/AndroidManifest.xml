@@ -3,6 +3,7 @@
     package="mikhailbolgov.balda"
     android:versionCode="2"
     android:versionName="1.2">
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:icon="@drawable/launch_icon"

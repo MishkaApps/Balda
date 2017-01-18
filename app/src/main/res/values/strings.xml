@@ -39,6 +39,7 @@
     <string name="recent_names_filename">recent_names</string>
     <string name="background_color">ФОН</string>
     <string name="buttons_headers_color">ЭЛЕМЕНТЫ ИНТЕРФЕЙСА</string>
+    <string name="game_fields_color">ЦВЕТ ИГРОВОГО ПОЛЯ</string>
 
     <string name="menu_item_user_voc">Словарь пользователя</string>
     <string name="menu_item_app_rules">Правила</string>
@@ -67,5 +68,15 @@
 
 
     <string name="letter_B">Б</string>
+
+
+    // строковые константы для файла настроек приложения ( цвет фона, цвет элементов интерфейса и т.д.
+    <string name="shrdPrefsAppThemes">APP_SETTINGS</string>
+    <string name="shrdPrefsAppBackgroundColor">APP_BACKGROUND</string>
+    <string name="shrdPrefsHeaderNFooterColor">HEADER_N_FOOTER</string>
+    <string name="shrdPrefsGameFieldsColor">GAME_FIELDS</string>
+    <string name="app_elements_color">APP_ELEMENTS</string>
+
+    <string name="permanentTextColorTag">PERM_COLOR</string>
 
 </resources>

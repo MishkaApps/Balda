@@ -8,14 +8,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="false"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/lytSettingsActivityBackground"
+        android:background="@color/activityBackground">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@color/activityBackground">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -60,6 +61,12 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.4"
+                android:orientation="vertical"
+                android:id="@+id/lytGameSettingsBackground">
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -510,6 +517,9 @@
                 android:layout_height="0dp"
                 android:layout_gravity="center"
                 android:layout_weight="0.2" />
+
+            </LinearLayout>
+
 
             <Button
                 android:id="@+id/button_ok_settings"

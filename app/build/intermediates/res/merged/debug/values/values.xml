@@ -60,6 +60,10 @@
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="gameFieldBackground">#ffd2d2d2</color>
+    <color name="game_fields_color_1">#bcaaa4</color>
+    <color name="game_fields_color_2">#b0bec5</color>
+    <color name="game_fields_color_3">#4e342e</color>
+    <color name="game_fields_color_4">#000000</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -103,7 +107,7 @@
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="textColor">@color/button_material_dark</color>
-    <color name="textColorWhite">@color/button_material_dark</color>
+    <color name="textColorWhite">#eaeadf</color>
     <color name="transparent">#ffffff</color>
     <color name="wait_layout_background">#82ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -266,6 +270,7 @@
     <string name="alert_dialog_start_game_warning_message">Приготовьтесь начать свой ход</string>
     <string name="alert_dialog_time_over_next_player_warning_message">Предыдущий игрок пропускает ход</string>
     <string name="alert_dialog_unknown_word">Значение слова не известно</string>
+    <string name="app_elements_color">APP_ELEMENTS</string>
     <string name="app_name">Балда</string>
     <string name="app_rules">Игровое поле представляет из себя 25 клеток расположенных в 5 рядов и 5 столбцов, и в начале игры содержит первое слово из пяти букв\n\n<b>ИГРОВОЙ ПРОЦЕСС</b>\n\nЗадача игрока во время хода - сначала поставить новую букву в одну из пустых клеток, затем ввести слово содержащее эту букву\n\nПри вводе новой буквы необходимо руководствоваться следующими правилами:\n- буква ставится в не занятую клетку\n- ячейка с новой буквой должна граничить хотя бы с одной заполненной ячейкой по вертикали или горизонтали\n\nДалее составляется слово по следующим правилам:\n- ячейки содержащие соседние буквы слова, должны граничить по горизонтали или по вертикали\n- одну и ту же ячейку нельзя использовать дважды за ход\n- обязательно использование новой буквы, введенной игроком\n- новое слово должно быть отличным от ранее использованныхn\n\n<b>ПОДСЧЕТ ОЧКОВ</b>\n\nЗа каждое введенное слово игрок получает очки, количество которых равно количеству букв в введенном слове\n\n<b>КОНЕЦ ИГРЫ</b>\n\nИгра заканчивается, когда становятся заняты все клетки или оба игрока по разу пропускают ход\n\nОдерживает победу игрок с наибольшим количеством очков\n
           </string>
@@ -276,6 +281,7 @@
     <string name="computer_name">КОМПЬЮТЕР</string>
     <string name="first_word">ПЕРВОЕ СЛОВО</string>
     <string name="game_difficulty">СЛОЖНОСТЬ ИГРЫ:</string>
+    <string name="game_fields_color">ЦВЕТ ИГРОВОГО ПОЛЯ</string>
     <string name="game_with_computer">ПРОТИВ КОМПЬЮТЕРА</string>
     <string name="game_with_man">ПРОТИВ ЧЕЛОВЕКА</string>
     <string name="instruction_of_using">Проведите пальцем справа налево, чтобы посмотреть счет и использованные слова</string>
@@ -285,10 +291,15 @@
     <string name="menu_item_app_settings">Настройки</string>
     <string name="menu_item_user_voc">Словарь пользователя</string>
     <string name="minutes">МИНУТ</string>
+    <string name="permanentTextColorTag">PERM_COLOR</string>
     <string name="recent_names_filename">recent_names</string>
     <string name="score_fragment_title">ИСПОЛЬЗОВАННЫЕ СЛОВА</string>
     <string name="seconds">СЕКУНД</string>
     <string name="settings">НОВАЯ ИГРА</string>
+    <string name="shrdPrefsAppBackgroundColor">APP_BACKGROUND</string>
+    <string name="shrdPrefsAppThemes">APP_SETTINGS</string>
+    <string name="shrdPrefsGameFieldsColor">GAME_FIELDS</string>
+    <string name="shrdPrefsHeaderNFooterColor">HEADER_N_FOOTER</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="string_game_mode">РЕЖИМ ИГРЫ:</string>
     <string name="string_player_1">ИГРОК 1:</string>

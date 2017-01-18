@@ -1,11 +1,15 @@
 [
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_j.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_j.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_ss.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_ss.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_g.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_g.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_d.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_d.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc.xml",
@@ -20,52 +24,60 @@
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_ch.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_a.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_a.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_j.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_j.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_v.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_v.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_a.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_a.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_s.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_s.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_saved.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_saved.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_shch.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_shch.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_p.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_p.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_p.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_p.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_o.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_o.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_o.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_o.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_u.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_u.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\comp_voc_debug.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\comp_voc_debug.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_ya.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_ya.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_u.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_u.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_b.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_b.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_i.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_i.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_e.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_e.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_e.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_e.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_f.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_f.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_i.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_i.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_yu.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_yu.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_v.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_v.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_r.xml",
@@ -100,6 +112,10 @@
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_n.xml"
     },
     {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_hs.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_hs.xml"
+    },
+    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\comp_voc_large.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\comp_voc_large.xml"
     },
@@ -108,20 +124,16 @@
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_k.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_zh.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_zh.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_zh.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_zh.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_sh.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_sh.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_saved.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_saved.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_ch.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_ch.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_d.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_d.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_sh.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_sh.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_kh.xml",
@@ -134,165 +146,5 @@
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_t.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_t.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_ss.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_ss.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_g.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_g.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_d.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_d.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_m.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_m.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_ss.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_ss.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_a.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_a.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_j.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_j.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_s.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_s.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_shch.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_shch.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc5.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc5.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_p.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_p.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_o.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_o.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\comp_voc_debug.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\comp_voc_debug.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_b.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_b.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_u.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_u.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_e.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_e.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_i.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_i.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_yu.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_yu.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_r.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_r.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_v.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_v.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_y.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_y.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_yu.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_yu.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_hs.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_hs.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_l.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_l.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_ts.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_ts.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_z.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_z.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_hs.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_hs.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_n.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_n.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_f.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_f.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_re.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_re.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_k.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_k.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_zh.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_zh.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\comp_voc_debug.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\comp_voc_debug.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\comp_voc_large.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\comp_voc_large.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_saved.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_saved.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_sh.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_sh.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_kh.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_kh.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_shch.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_shch.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_t.xml",
-        "source": "C:\\Android Projects\\Balda\\app\\src\\main\\res\\xml\\voc_t.xml"
     }
 ]

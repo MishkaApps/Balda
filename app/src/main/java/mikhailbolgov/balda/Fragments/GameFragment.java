@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Vibrator;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -484,6 +485,7 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
         for (int keyCtr = 0; keyCtr < 32; ++keyCtr)
             if (v.getId() == keyboard[keyCtr].getId()) {
+                ((Vibrator)context.getSystemService(Context.VIBRATOR_SERVICE)).vibrate(30);
                 onKeyClick(keyboard[keyCtr]);
                 break;
             }

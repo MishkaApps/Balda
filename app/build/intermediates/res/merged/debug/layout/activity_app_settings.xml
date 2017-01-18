@@ -10,177 +10,270 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/darkGrayAppColor"
-            android:gravity="center"
-            android:text="НАСТРОЙКИ"
-            android:textColor="@color/textColorWhite"
-            android:textSize="@dimen/textSize1"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/background_color"
-            android:textColor="@color/textColorWhite"
-            android:textSize="@dimen/textSize2"
-            android:textStyle="bold" />
-
         <LinearLayout
+            android:id="@+id/lytAppSettingsFooterNHeader"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <RelativeLayout
-                android:layout_width="0dp"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="НАСТРОЙКИ"
+                android:textColor="@color/textColorWhite"
+                android:textSize="@dimen/textSize1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:id="@+id/lytAppSettingsBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:id="@+id/app_background_color_1_lyt">
+                android:gravity="center"
+                android:text="@string/background_color"
+                android:textColor="@color/textColorWhite"
+                android:textSize="@dimen/textSize2"
+                android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/app_background_color_1" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1">
 
-                <ImageView
-                    android:layout_width="match_parent"
+                <RelativeLayout
+                    android:id="@+id/app_background_color_1_lyt"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:background="@color/app_background_color_2" />
-            </RelativeLayout>
+                    android:layout_weight="1">
 
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_background_color_1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/app_background_color_2_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_background_color_2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/app_background_color_3_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_background_color_3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/app_background_color_4_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_background_color_4" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/buttons_headers_color"
+                android:textColor="@color/textColorWhite"
+                android:textSize="@dimen/textSize2"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1">
 
-                <ImageView
-                    android:layout_width="match_parent"
+                <RelativeLayout
+                    android:id="@+id/app_elements_color_1_lyt"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:background="@color/app_background_color_3" />
-            </RelativeLayout>
+                    android:layout_weight="1">
 
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/app_elements_color_2_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/app_elements_color_3_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/app_elements_color_4_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_4" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/game_fields_color"
+                android:textColor="@color/textColorWhite"
+                android:textSize="@dimen/textSize2"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1">
 
-                <ImageView
-                    android:layout_width="match_parent"
+                <RelativeLayout
+                    android:id="@+id/lytGameFieldColor1"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:background="@color/app_background_color_4" />
+                    android:layout_weight="1">
 
-            </RelativeLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/game_fields_color_1" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/letter_B"
+                        android:textSize="@dimen/letter_B_size"
+                        android:textStyle="bold"
+                        android:tag="PERM_COLOR"
+                        android:textColor="@color/textColor"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytGameFieldColor2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/game_fields_color_2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/letter_B"
+                        android:textSize="@dimen/letter_B_size"
+                        android:textStyle="bold"
+                        android:tag="PERM_COLOR"
+                        android:textColor="@color/textColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytGameFieldColor3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/game_fields_color_3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/letter_B"
+                        android:textSize="@dimen/letter_B_size"
+                        android:textStyle="bold"
+                        android:tag="PERM_COLOR"
+                        android:textColor="@color/textColorWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytGameFieldColor4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/game_fields_color_4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/letter_B"
+                        android:textSize="@dimen/letter_B_size"
+                        android:textStyle="bold"
+                        android:tag="PERM_COLOR"
+                        android:textColor="@color/textColorWhite" />
+
+                </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/buttons_headers_color"
-            android:textColor="@color/textColorWhite"
-            android:textSize="@dimen/textSize2"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/app_elements_color_1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/letter_B"
-                    android:textSize="@dimen/letter_B_size"
-                    android:textStyle="bold" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/app_elements_color_2" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/letter_B"
-                    android:textSize="@dimen/letter_B_size"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/app_elements_color_3" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/letter_B"
-                    android:textSize="@dimen/letter_B_size"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/app_elements_color_4" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/letter_B"
-                    android:textSize="@dimen/letter_B_size"
-                    android:textStyle="bold" />
-
-
-
-            </RelativeLayout>
-        </LinearLayout>
-
-
     </LinearLayout>
 </RelativeLayout>

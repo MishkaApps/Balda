@@ -1,17 +1,19 @@
 package mikhailbolgov.balda.Activities;
 
 import android.app.Activity;
-import android.app.ActivityManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
@@ -37,12 +39,13 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Random;
 
+import mikhailbolgov.balda.ThemeChangeable;
 import mikhailbolgov.balda.Fragments.Keyboard;
 import mikhailbolgov.balda.Library;
 import mikhailbolgov.balda.Modes;
-import mikhailbolgov.balda.MyLog;
 import mikhailbolgov.balda.R;
 import mikhailbolgov.balda.Settings;
+import mikhailbolgov.balda.ThemeChanger;
 
 import static android.view.View.OnClickListener;
 import static android.view.View.VISIBLE;
@@ -78,9 +81,6 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
     private final int FIRST_WORD = 0, NAME1 = 1, NAME2 = 2;
 
     private enum ORDER {COMP_FIRST, COMP_SECOND}
-
-
-
     private ORDER order;
 
 
@@ -89,6 +89,9 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        ThemeChanger themeChanger = new ThemeChanger(this);
+        themeChanger.applyTheme(this, (ViewGroup) findViewById(R.id.lytGameSettingsBackground), new ArrayList<ViewGroup>());
 
 
         timeChooserLayout = (LinearLayout) findViewById(R.id.timeChooseLayout);
@@ -532,6 +535,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
 
         if (keyboard.isKey(v)) {
             onKeyClick(((Button) v).getText().charAt(0));
+            ((Vibrator)getSystemService(VIBRATOR_SERVICE)).vibrate(30);
             if (inFocus == tvFirstWord)
                 if (tvFirstWord.getText().length() == 5) {
                     inFocus.setBackgroundResource(R.drawable.text_view_background);
@@ -540,10 +544,8 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                     firstWordBackspace.startAnimation(bckspceDisapAnim);
                     firstWordBackspace.setVisibility(View.INVISIBLE);
                 }
-
             return;
         }
-
 
         if (v == btnChangeWord) {
             btnChangeWord.startAnimation(chgWrdAnim);
@@ -734,6 +736,8 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
     protected void onResume() {
         super.onResume();
         changeWord();
+        ThemeChanger themeChanger = new ThemeChanger(this);
+        themeChanger.applyTheme(this, (ViewGroup) findViewById(R.id.lytGameSettingsBackground), new ArrayList<ViewGroup>());
 
     }
 
@@ -841,4 +845,5 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         }
 
     }
+
 }
