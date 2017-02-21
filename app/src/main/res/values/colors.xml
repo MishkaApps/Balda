@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="cellBackground">#FFEBEE</color>
-    <color name="inFocusBackground">#ffcce9c4</color>
-    <color name="letterAddedInWord">#ffaab4e6</color>
-    <color name="newLetter">#ffe6e4a3</color>
+    <color name="cell_in_focus_background_white_text">#1b5e20</color>
+    <color name="cell_in_focus_background_dark_text">#81c784</color>
+    <!--<color name="inFocusBackground">#ffcce9c4</color>-->                     //old
+    <color name="letter_added_in_word_dark_text">#9fa8da</color>
+    <color name="letter_added_in_word_white_text">#7986cb</color>
+    <!--<color name="letter_added_in_word_white">#ffaab4e6</color>-->                     //old
+    <color name="new_letter_dark_text">#e6ee9c</color>
+    <color name="new_letter_white_text">#9e9d24</color>
+    <!--<color name="new_letter_dark">#ffe6e4a3</color>-->                                  //old
     <color name="gameFieldBackground">#ffd2d2d2</color>
     <color name="outOfFocusBackground">#D2D2D2</color>
     <color name="scoreTitleBackground">#ffaa96b4</color>
 
-    <color name="textColor">@color/button_material_dark</color>
-    <color name="textColorWhite">#eaeadf</color>
+    <color name="text_link">#6200ea</color>
+
+    <color name="textColor">#000000</color>
+    <color name="textColorWhite">#ffffff</color>
+
+
+    <color name="absolutelyBlack">#000000</color>
+    <color name="absolutelyWhite">#ffffff</color>
+
     <!--<color name="textColorWhite">@color/button_material_light</color>-->
 
     <!--<color name="darkGrayAppColor">#ff878781</color>-->
     <!--<color name="lightGrayAppColor">#ff9b9b9b</color>-->
 
-
-
-
     <color name="darkGrayAppColor">#ffbebeb8</color>
     <color name="lightGrayAppColor">#ffcdcdcd</color>
 
-    <color name="separator_color">#ff5a595b</color>
+    <color name="separator_color">#616161</color>
 
     <color name="transparent">#ffffff</color>
     <color name="activityBackground">#ffffffff</color>
-    <color name="active_player_background">#ff81c06b</color>
+    <color name="active_player_background_dark_text">#81c784</color>
+    <color name="active_player_background_white_text">#1b5e20</color>
     <color name="not_active_player_background">@color/darkGrayAppColor</color>
     <color name="wait_layout_background">#82ffffff</color>
 
@@ -33,7 +44,7 @@
     <color name="app_background_color_1">#ffffff</color>
     <color name="app_background_color_2">#424242</color>
     <color name="app_background_color_3">#4e342e</color>
-    <color name="app_background_color_4">#1b5e20</color>
+    <color name="app_background_color_4">#3e2723</color>
 
 
     <color name="app_elements_color_1">#ffffff</color>
@@ -43,8 +54,8 @@
 
     <color name="game_fields_color_1">#bcaaa4</color>
     <color name="game_fields_color_2">#b0bec5</color>
-    <color name="game_fields_color_3">#4e342e</color>
-    <color name="game_fields_color_4">#000000</color>
+    <color name="game_fields_color_3">#3e2723</color>
+    <color name="game_fields_color_4">#212121</color>
 
 
 </resources>

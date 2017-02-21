@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mikhailbolgov.balda.Activities.ThemesActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lytAppSettingsFooterNHeader"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="НАСТРОЙКИ"
+                    android:textColor="@color/textColorWhite"
+                    android:textSize="@dimen/textSize1"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytAppSettingsBackground"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="@string/themes"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize2"
+                    android:textStyle="bold"
+                    />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/lytAppSettingsBackgroundColors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/lyt_theme_1"
+                            android:layout_width="@dimen/colorViewWidth"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:tag="@string/theme1">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/app_background_color_1"
+                                android:tag="@string/tagTextBlack" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/lyt_theme_2"
+                            android:layout_width="@dimen/colorViewWidth"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:tag="@string/theme1">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/app_background_color_2"
+                                android:tag="@string/tagTextWhite" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/lyt_theme_3"
+                            android:layout_width="@dimen/colorViewWidth"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:tag="@string/theme1">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/app_background_color_3"
+                                android:tag="@string/tagTextWhite" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/lyt_theme_4"
+                            android:layout_width="@dimen/colorViewWidth"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:tag="@string/theme4">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/app_background_color_4"
+                                android:tag="@string/tagTextWhite" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/app_background_color_5_lyt"
+                            android:layout_width="@dimen/colorViewWidth"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/app_background_color_3"
+                                android:tag="@string/tagTextWhite" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/text_link"
+                        android:text="@string/extended_settings"
+                        android:id="@+id/tv_extended_settings"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Использовать жирный шрифт"
+                        android:id="@+id/textView2"
+                        android:layout_weight="5"
+                        android:layout_gravity="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize2"
+                        android:gravity="left|fill_vertical" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/bold_font"/>
+
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

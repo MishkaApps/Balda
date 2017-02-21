@@ -1,43 +1,43 @@
 [
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\swap_white.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\swap_white.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\update_word_white.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\update_word_white.png"
+    },
+    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\change_word.png",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\change_word.png"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\launch_icon.png",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\launch_icon.png"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\update_word_black.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\update_word_black.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.png",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\menu.png"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_to_swipe.png",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\arrow_to_swipe.png"
-    },
-    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\swap_names.png",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\swap_names.png"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backspace_black.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\backspace_black.png"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_edit_space.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_edit_space.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backspace_white.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\backspace_white.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
@@ -48,36 +48,20 @@
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\color_choose_white.png"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pass.png",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\pass.png"
-    },
-    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_view_background.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_view_background.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_view_background_dark_text.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_view_background_dark_text.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\undo.png",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\undo.png"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\setting_separator.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\setting_separator.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\swap_black.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\swap_black.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hand_for_swipe.png",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\hand_for_swipe.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -92,24 +76,12 @@
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\two_players_score_separator.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings_activity_item_background.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\settings_activity_item_background.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backspace.png",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\backspace.png"
-    },
-    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backspace.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\backspace.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete.png",
@@ -118,6 +90,10 @@
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_view_in_focus_background_dark_text.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_view_in_focus_background_dark_text.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -132,12 +108,108 @@
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_white.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\menu_white.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete_white.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\delete_white.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_view_background_white_text.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_view_background_white_text.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_white.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\checkbox_white.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\launch_icon.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\launch_icon.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_to_swipe.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\arrow_to_swipe.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_black.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\menu_black.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\swap_names.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\swap_names.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_edit_space.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_edit_space.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pass.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\pass.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_view_background.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_view_background.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\skip_black.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\skip_black.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\undo.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\undo.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\setting_separator.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\setting_separator.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_view_in_focus_background_white_text.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_view_in_focus_background_white_text.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete_black.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\delete_black.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hand_for_swipe.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\hand_for_swipe.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings_activity_item_background.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\settings_activity_item_background.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
@@ -156,14 +228,6 @@
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\color_choose_dark.png"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_view_in_focus_background.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\text_view_in_focus_background.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
@@ -172,15 +236,19 @@
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\on_game_players_view_separator.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wait_hourglass.png",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\wait_hourglass.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings_activity_item_background_light.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\settings_activity_item_background_light.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_black.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\checkbox_black.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\skip_white.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\skip_white.png"
     }
 ]

@@ -19,14 +19,16 @@
             android:textSize="@dimen/textSize1"
             android:textColor="@color/textColorWhite"
             android:textStyle="bold"
-            android:background="@color/darkGrayAppColor" />
+            android:background="@color/darkGrayAppColor"
+            android:id="@+id/tvRulesHeader" />
 
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:id="@+id/scrollView"
-            android:layout_weight="8" >
+            android:id="@+id/lytRulesBackground"
+            android:layout_weight="8"
+            android:tag="@string/tagInScrollView" >
 
             <TextView
                 android:layout_width="match_parent"

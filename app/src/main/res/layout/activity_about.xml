@@ -19,27 +19,29 @@
             android:textSize="@dimen/textSize1"
             android:textColor="@color/textColorWhite"
             android:textStyle="bold"
-            android:background="@color/darkGrayAppColor" />
+            android:background="@color/darkGrayAppColor"
+            android:id="@+id/tvAboutHeader"/>
 
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:id="@+id/scrollView2"
-            android:layout_weight="8" >
+            android:id="@+id/lytAboutBackground"
+            android:layout_weight="8"
+            android:tag="@string/tagInScrollView" >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:text="@string/about"
-                android:id="@+id/textView13"
+                android:id="@+id/tvAbout"
                 android:layout_weight="8"
                 android:gravity="left"
                 android:textSize="@dimen/textSize3"
                 android:autoLink="email"
                 android:paddingLeft="16dp"
                 android:paddingTop="16dp"
-                android:paddingRight="16dp" />
+                android:paddingRight="16dp"/>
         </ScrollView>
 
     </LinearLayout>

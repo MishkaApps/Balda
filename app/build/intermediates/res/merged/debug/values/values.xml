@@ -27,14 +27,17 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="absolutelyBlack">#000000</color>
+    <color name="absolutelyWhite">#ffffff</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <color name="active_player_background">#ff81c06b</color>
+    <color name="active_player_background_dark_text">#81c784</color>
+    <color name="active_player_background_white_text">#1b5e20</color>
     <color name="activityBackground">#ffffffff</color>
     <color name="app_background_color_1">#ffffff</color>
     <color name="app_background_color_2">#424242</color>
     <color name="app_background_color_3">#4e342e</color>
-    <color name="app_background_color_4">#1b5e20</color>
+    <color name="app_background_color_4">#3e2723</color>
     <color name="app_elements_color_1">#ffffff</color>
     <color name="app_elements_color_2">#ffbebeb8</color>
     <color name="app_elements_color_3">#3e2723</color>
@@ -52,6 +55,8 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="cellBackground">#FFEBEE</color>
+    <color name="cell_in_focus_background_dark_text">#81c784</color>
+    <color name="cell_in_focus_background_white_text">#1b5e20</color>
     <color name="darkGrayAppColor">#ffbebeb8</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
@@ -62,14 +67,14 @@
     <color name="gameFieldBackground">#ffd2d2d2</color>
     <color name="game_fields_color_1">#bcaaa4</color>
     <color name="game_fields_color_2">#b0bec5</color>
-    <color name="game_fields_color_3">#4e342e</color>
-    <color name="game_fields_color_4">#000000</color>
+    <color name="game_fields_color_3">#3e2723</color>
+    <color name="game_fields_color_4">#212121</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <color name="inFocusBackground">#ffcce9c4</color>
-    <color name="letterAddedInWord">#ffaab4e6</color>
+    <color name="letter_added_in_word_dark_text">#9fa8da</color>
+    <color name="letter_added_in_word_white_text">#7986cb</color>
     <color name="lightGrayAppColor">#ffcdcdcd</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
@@ -83,7 +88,8 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <color name="newLetter">#ffe6e4a3</color>
+    <color name="new_letter_dark_text">#e6ee9c</color>
+    <color name="new_letter_white_text">#9e9d24</color>
     <color name="not_active_player_background">@color/darkGrayAppColor</color>
     <color name="outOfFocusBackground">#D2D2D2</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -101,13 +107,14 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <color name="separator_color">#ff5a595b</color>
+    <color name="separator_color">#616161</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="textColor">@color/button_material_dark</color>
-    <color name="textColorWhite">#eaeadf</color>
+    <color name="textColor">#000000</color>
+    <color name="textColorWhite">#ffffff</color>
+    <color name="text_link">#6200ea</color>
     <color name="transparent">#ffffff</color>
     <color name="wait_layout_background">#82ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -207,6 +214,7 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="colorViewWidth">100dp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
@@ -235,6 +243,8 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="gameFieldVibrationDuration">15</integer>
+    <integer name="keyboardVibrationDuration">15</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -255,7 +265,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="about">Приложение \"<b>Балда</b>\" предоставляет возможность играть как в одиночку с компьютером, так и с другим человеком\n\n<b>НАСТРОЙКИ</b>\n\nБольшое количество игровых параметров позволяет гибко настраивать игровой процесс\nДоступные для изменения параметры:\n- начальное слово ( можно ввести самому или выбрать из уже существующих, нажав на кнопку со стрелочками рядом с полем ввода )\n- имена игроков \n- режим игры ( против компьютера или против человека )\n- сложность игры ( в режиме игры против компьютера )\n- временные ограничения на ход ( в режиме игры против человека )\n\n<b>ИГРА</b>\n\nВверху игрового экрана отображаются имена игроков с соответствующими им баллами, набранными по ходу игры\n\nВ середине находится само игровое поле, а под ним поле отображающее введенное слово и три кнопки.\n\nКнопка <b>"Сбросить"</b> - сбрасывает выделенные ячейки и вставленные буквы\nКнопка с изображением стрелки - пропуск хода\nКнопка "<b>ОК</b>" - подтверждает ввод выбранного слова\n\nДля просмотра введенных слов сделайте свайп справа налево\nДля установки паузы во время игры на время - нажмите на таймер\n\n<b>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</b>\n\nРазработчик: <b>Mishka Apps</b>\nПри возникновении любых вопросов или некорректной работе приложения просим писать по адресу:  MishkaApps@gmail.com\n"</string>
+    <string name="about">Приложение \"<b>Балда</b>\" предоставляет возможность играть как в одиночку с компьютером, так и с другим человеком\n\n<b>НАСТРОЙКИ</b>\n\nБольшое количество игровых параметров позволяет гибко настраивать игровой процесс\nДоступные для изменения параметры:\n- начальное слово ( можно ввести самому или выбрать из уже существующих, нажав на кнопку со стрелочками рядом с полем ввода )\n- имена игроков \n- режим игры ( против компьютера или против человека )\n- сложность игры ( в режиме игры против компьютера )\n- временные ограничения на ход ( в режиме игры против человека )\n\n<b>ИГРА</b>\n\nВверху игрового экрана отображаются имена игроков с соответствующими им баллами, набранными по ходу игры\n\nВ середине находится само игровое поле, а под ним поле отображающее введенное слово и три кнопки.\n\nКнопка <b>"Сбросить"</b> - сбрасывает выделенные ячейки и вставленные буквы\nКнопка с изображением стрелки - пропуск хода\nКнопка "<b>ОК</b>" - подтверждает ввод выбранного слова\n\nДля просмотра введенных слов сделайте свайп справа налево\nДля установки паузы во время игры на время - нажмите на таймер\n\n<b>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</b>\n\nРазработчик: <b>Mishka Apps</b>\nПри возникновении любых вопросов или некорректной работе приложения просим писать в отзыве к приложению или по адресу:  MishkaApps@gmail.com\n"</string>
     <string name="additionalSettings">ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ</string>
     <string name="alert_dialog_btn_neg_button">Нет</string>
     <string name="alert_dialog_btn_pos_button">Да</string>
@@ -270,7 +280,6 @@
     <string name="alert_dialog_start_game_warning_message">Приготовьтесь начать свой ход</string>
     <string name="alert_dialog_time_over_next_player_warning_message">Предыдущий игрок пропускает ход</string>
     <string name="alert_dialog_unknown_word">Значение слова не известно</string>
-    <string name="app_elements_color">APP_ELEMENTS</string>
     <string name="app_name">Балда</string>
     <string name="app_rules">Игровое поле представляет из себя 25 клеток расположенных в 5 рядов и 5 столбцов, и в начале игры содержит первое слово из пяти букв\n\n<b>ИГРОВОЙ ПРОЦЕСС</b>\n\nЗадача игрока во время хода - сначала поставить новую букву в одну из пустых клеток, затем ввести слово содержащее эту букву\n\nПри вводе новой буквы необходимо руководствоваться следующими правилами:\n- буква ставится в не занятую клетку\n- ячейка с новой буквой должна граничить хотя бы с одной заполненной ячейкой по вертикали или горизонтали\n\nДалее составляется слово по следующим правилам:\n- ячейки содержащие соседние буквы слова, должны граничить по горизонтали или по вертикали\n- одну и ту же ячейку нельзя использовать дважды за ход\n- обязательно использование новой буквы, введенной игроком\n- новое слово должно быть отличным от ранее использованныхn\n\n<b>ПОДСЧЕТ ОЧКОВ</b>\n\nЗа каждое введенное слово игрок получает очки, количество которых равно количеству букв в введенном слове\n\n<b>КОНЕЦ ИГРЫ</b>\n\nИгра заканчивается, когда становятся заняты все клетки или оба игрока по разу пропускают ход\n\nОдерживает победу игрок с наибольшим количеством очков\n
           </string>
@@ -279,11 +288,17 @@
     <string name="button_ok">ОК</string>
     <string name="buttons_headers_color">ЭЛЕМЕНТЫ ИНТЕРФЕЙСА</string>
     <string name="computer_name">КОМПЬЮТЕР</string>
+    <string name="extended_settings">расширенные настройки >></string>
     <string name="first_word">ПЕРВОЕ СЛОВО</string>
     <string name="game_difficulty">СЛОЖНОСТЬ ИГРЫ:</string>
     <string name="game_fields_color">ЦВЕТ ИГРОВОГО ПОЛЯ</string>
     <string name="game_with_computer">ПРОТИВ КОМПЬЮТЕРА</string>
     <string name="game_with_man">ПРОТИВ ЧЕЛОВЕКА</string>
+    <string name="iconTagBackspace">backspace</string>
+    <string name="iconTagMenu">menu</string>
+    <string name="iconTagSkipMove">skipMove</string>
+    <string name="iconTagSwap">swap</string>
+    <string name="iconTagUpdateWord">update_word</string>
     <string name="instruction_of_using">Проведите пальцем справа налево, чтобы посмотреть счет и использованные слова</string>
     <string name="letter_B">Б</string>
     <string name="menu_item_about_app">О приложении</string>
@@ -297,18 +312,35 @@
     <string name="seconds">СЕКУНД</string>
     <string name="settings">НОВАЯ ИГРА</string>
     <string name="shrdPrefsAppBackgroundColor">APP_BACKGROUND</string>
+    <string name="shrdPrefsAppBackgroundTextColor">APP_BACKGROUND_TEXT_COLOR</string>
     <string name="shrdPrefsAppThemes">APP_SETTINGS</string>
+    <string name="shrdPrefsFontBold">bold_font</string>
     <string name="shrdPrefsGameFieldsColor">GAME_FIELDS</string>
+    <string name="shrdPrefsGameFieldsTextColor">GAME_FIELDS_TEXT_COLOR</string>
     <string name="shrdPrefsHeaderNFooterColor">HEADER_N_FOOTER</string>
+    <string name="shrdPrefsHeaderNFooterTextColor">HEADER_N_FOOTER_TEXT_COLOR</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="string_game_mode">РЕЖИМ ИГРЫ:</string>
     <string name="string_player_1">ИГРОК 1:</string>
     <string name="string_player_2">ИГРОК 2:</string>
     <string name="string_players">ИГРОКИ</string>
+    <string name="tagDeleteVoc">DeleteVoc</string>
+    <string name="tagEraseButton">ButtonErase</string>
+    <string name="tagInScrollView">inScrollView</string>
+    <string name="tagLinefulColor">linefulColor</string>
+    <string name="tagLinefulDrawable">linefulDrawable</string>
+    <string name="tagTextBlack">b</string>
+    <string name="tagTextWhite">w</string>
     <string name="text_view_name1">ИМЯ 1</string>
     <string name="text_view_name2">ИМЯ 2</string>
+    <string name="theme1">theme1</string>
+    <string name="theme2">theme2</string>
+    <string name="theme3">theme3</string>
+    <string name="theme4">theme4</string>
+    <string name="themes">ТЕМЫ</string>
     <string name="time_for_move">ВРЕМЯ НА ХОД:</string>
     <string name="toast_tap_again">Тапните еще раз..</string>
+    <string name="use_bold">ЭЛЕМЕНТЫ ИНТЕРФЕЙСА</string>
     <string name="user_voc_file_name">user_voc</string>
     <string name="without_time">БЕЗ ВРЕМЕНИ</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

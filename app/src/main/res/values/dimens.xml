@@ -10,4 +10,7 @@
     <dimen name="textSize3">14dp</dimen>
     <dimen name="letter_B_size">32dp</dimen>
 
+    <dimen name="colorViewWidth">100dp</dimen>
+
+
 </resources>

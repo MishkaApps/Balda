@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -17,12 +16,14 @@ import java.util.HashMap;
 import mikhailbolgov.balda.Balda;
 import mikhailbolgov.balda.Player;
 import mikhailbolgov.balda.R;
+import mikhailbolgov.balda.ThemeChangeable;
+import mikhailbolgov.balda.ThemeChanger;
 import mikhailbolgov.balda.Word;
 
 /**
  * Created by Михаил on 25.04.2015.
  */
-public class ScoreFragment extends Fragment {
+public class ScoreFragment extends Fragment implements ThemeChangeable {
 
     private Balda balda;
     private View contentView;
@@ -33,7 +34,7 @@ public class ScoreFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(savedInstanceState != null)
+        if (savedInstanceState != null)
             balda = (Balda) savedInstanceState.getSerializable("balda");
     }
 
@@ -54,6 +55,8 @@ public class ScoreFragment extends Fragment {
         tvPlayer1Name.setText(players.get(0).getName());
         tvPlayer2Name.setText(players.get(1).getName());
 
+        ThemeChanger themeChanger = new ThemeChanger(getActivity());
+
         data1 = new ArrayList<>();
 
         HashMap<String, String> item;
@@ -68,7 +71,10 @@ public class ScoreFragment extends Fragment {
         String from[] = {wordTag, wordPointsTag};
         int to[] = {R.id.tv_word, R.id.tv_word_points};
 
-        adapter1 = new SimpleAdapter(contentView.getContext(), data1, R.layout.score_item, from, to);
+        if (themeChanger.backgroundTextColorIsDark())
+            adapter1 = new SimpleAdapter(contentView.getContext(), data1, R.layout.score_item_dark_text, from, to);
+        else
+            adapter1 = new SimpleAdapter(contentView.getContext(), data1, R.layout.score_item_white_text, from, to);
 
         lvPlayer1.setAdapter(adapter1);
 
@@ -80,11 +86,20 @@ public class ScoreFragment extends Fragment {
             data2.add(item);
         }
 
-        adapter2 = new SimpleAdapter(contentView.getContext(), data2, R.layout.score_item, from, to);
+        if (themeChanger.backgroundTextColorIsDark())
+            adapter2 = new SimpleAdapter(contentView.getContext(), data2, R.layout.score_item_dark_text, from, to);
+        else
+            adapter2 = new SimpleAdapter(contentView.getContext(), data2, R.layout.score_item_white_text, from, to);
 
         lvPlayer2.setAdapter(adapter2);
 
         return contentView;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        setTheme();
     }
 
     public void receiveData(Balda balda) {
@@ -129,10 +144,22 @@ public class ScoreFragment extends Fragment {
 
         adapter2.notifyDataSetChanged();
     }
+
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putSerializable("balda", balda);
+    }
+
+    @Override
+    public void setTheme() {
+        ThemeChanger themeChanger = new ThemeChanger(getActivity());
+        ArrayList<View> header = new ArrayList<>();
+        header.add(getView().findViewById(R.id.tvScoreFragmentHeader));
+
+
+        themeChanger.applyTheme(getContext(), (ViewGroup) getView().findViewById(R.id.lytScoreFragmentBackground), header);
+
     }
 }
 

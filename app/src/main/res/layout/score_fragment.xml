@@ -14,7 +14,7 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:text="@string/score_fragment_title"
-            android:id="@+id/textView2"
+            android:id="@+id/tvScoreFragmentHeader"
             android:layout_weight="1"
             android:gravity="center"
             android:textSize="@dimen/textSize2"
@@ -27,7 +27,8 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:gravity="center_horizontal"
-            android:layout_weight="8">
+            android:layout_weight="8"
+            android:id="@+id/lytScoreFragmentBackground">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -69,8 +70,9 @@
                     android:id="@+id/imageView4"
                     android:layout_gravity="center"
                     android:background="@color/separator_color"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp" />
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:tag="@string/tagLinefulColor"/>
 
             </FrameLayout>
 

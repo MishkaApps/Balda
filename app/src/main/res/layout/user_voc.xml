@@ -9,12 +9,14 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@color/darkGrayAppColor"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/lytUserVocabularyHeader">
 
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:visibility="invisible">
 
             <Button
                 android:id="@+id/backButton"
@@ -29,12 +31,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:background="@color/darkGrayAppColor"
             android:gravity="center_vertical|center_horizontal"
             android:text="СЛОВАРЬ ПОЛЬЗОВАТЕЛЯ"
             android:textColor="@color/textColorWhite"
             android:textSize="@dimen/textSize1"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <FrameLayout
             android:layout_width="0dp"
@@ -47,25 +48,35 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/delete" />
+                android:background="@drawable/delete"
+                android:tag="@string/tagDeleteVoc"/>
         </FrameLayout>
 
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/listView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:animateLayoutChanges="true"
-        android:paddingLeft="0dp" />
+        android:orientation="vertical"
+        android:id="@+id/lytUserVocabularyBackground">
 
-    <TextView
-        android:id="@+id/emptyVocTextView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="Словарь пока что пуст... "
-        android:visibility="gone" />
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:animateLayoutChanges="true"
+            android:paddingLeft="0dp" />
+
+        <TextView
+            android:id="@+id/emptyVocTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Словарь пока что пуст... "
+            android:visibility="gone" />
+    </LinearLayout>
+
 </LinearLayout>

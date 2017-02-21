@@ -8,6 +8,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
@@ -20,11 +21,12 @@ import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import mikhailbolgov.balda.MyLog;
 import mikhailbolgov.balda.Node;
 import mikhailbolgov.balda.R;
+import mikhailbolgov.balda.ThemeChangeable;
+import mikhailbolgov.balda.ThemeChanger;
 
-public class UserVocabulary extends VocViewer {
+public class UserVocabulary extends VocViewer implements ThemeChangeable {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +41,7 @@ public class UserVocabulary extends VocViewer {
         clearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(words.size() == 0)
+                if (words.size() == 0)
                     return;
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setMessage("Вы уверены, что хотите удалить все слова?").setPositiveButton("Да", new DialogInterface.OnClickListener() {
@@ -88,10 +90,15 @@ public class UserVocabulary extends VocViewer {
         }
 
         String[] tags = new String[]{NUMBER_TAG, WORD_TAG};
-        int[] textViews = new int[]{R.id.voc_item_number, R.id.voc_item};
 
-
-        simpleAdapter = new SimpleAdapter(context, data, R.layout.voc_item, tags, textViews);
+        ThemeChanger themeChanger = new ThemeChanger(this);
+        if (themeChanger.backgroundTextColorIsDark()) {
+            int[] textViews = new int[]{R.id.voc_item_number, R.id.voc_item};
+            simpleAdapter = new SimpleAdapter(context, data, R.layout.voc_item_dark_text, tags, textViews);
+        } else {
+            int[] textViews = new int[]{R.id.voc_item_number_white, R.id.voc_item_white};
+            simpleAdapter = new SimpleAdapter(context, data, R.layout.voc_item_white_text, tags, textViews);
+        }
 
         registerForContextMenu(listView);
 
@@ -154,5 +161,20 @@ public class UserVocabulary extends VocViewer {
 
         changeVocState();
         return super.onContextItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setTheme();
+    }
+
+    @Override
+    public void setTheme() {
+        ThemeChanger themeChanger = new ThemeChanger(this);
+        ArrayList<View> header = new ArrayList<>();
+        header.add(findViewById(R.id.lytUserVocabularyHeader));
+        themeChanger.applyTheme(this, (ViewGroup) findViewById(R.id.lytUserVocabularyBackground), header);
+
     }
 }

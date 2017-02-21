@@ -1,11 +1,23 @@
 [
     {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\score_item_white_text.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\layout\\score_item_white_text.xml"
+    },
+    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\voc_item_white_text.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\layout\\voc_item_white_text.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_themes.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\layout\\activity_themes.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
@@ -26,6 +38,10 @@
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\settings.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\layout\\settings.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\voc_item_dark_text.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\layout\\voc_item_dark_text.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
@@ -80,10 +96,6 @@
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\score_item.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\layout\\score_item.xml"
-    },
-    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
@@ -126,6 +138,10 @@
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\score_item_dark_text.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\layout\\score_item_dark_text.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
@@ -178,10 +194,6 @@
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_big_media.xml"
-    },
-    {
-        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\voc_item.xml",
-        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\layout\\voc_item.xml"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",

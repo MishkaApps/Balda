@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,19 +41,19 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Random;
 
-import mikhailbolgov.balda.ThemeChangeable;
 import mikhailbolgov.balda.Fragments.Keyboard;
 import mikhailbolgov.balda.Library;
 import mikhailbolgov.balda.Modes;
 import mikhailbolgov.balda.R;
 import mikhailbolgov.balda.Settings;
+import mikhailbolgov.balda.ThemeChangeable;
 import mikhailbolgov.balda.ThemeChanger;
 
 import static android.view.View.OnClickListener;
 import static android.view.View.VISIBLE;
 
 
-public class SettingsActivity extends FragmentActivity implements OnClickListener, Modes, CompoundButton.OnCheckedChangeListener {
+public class SettingsActivity extends FragmentActivity implements OnClickListener, Modes, CompoundButton.OnCheckedChangeListener, ThemeChangeable {
 
     private Button btnOk, btnChangeWord;
     private TextView tvFirstWord;
@@ -79,9 +81,52 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
     private ArrayList<View> underKeyboardViews;
     private Button btnSwap;
     private final int FIRST_WORD = 0, NAME1 = 1, NAME2 = 2;
+    private ThemeChanger themeChanger;
+    private TextView tvTimeChooserLabel, tvDifficultyChooserLabel;
+    private int textViewBackground, textViewInFocus;
+
+    @Override
+    public void setTheme() {
+
+
+        ArrayList<View> headerNFooter = new ArrayList<>();
+        headerNFooter.add(findViewById(R.id.lytSettingsHeader));
+        headerNFooter.add(findViewById(R.id.btnSettingsOk));
+        themeChanger.applyTheme(this, (ViewGroup) findViewById(R.id.lytGameSettingsBackground), headerNFooter);
+    }
 
     private enum ORDER {COMP_FIRST, COMP_SECOND}
+
     private ORDER order;
+
+    private class SpinnerAdapter extends ArrayAdapter<String> {
+        private String[] objects;
+
+        public SpinnerAdapter(Context context, int resource, int textViewResourceId, String[] objects) {
+            super(context, resource, textViewResourceId, objects);
+            this.objects = objects;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.spinner_drop_down_item, null);
+            TextView view = (TextView) convertView.findViewById(R.id.drop_down_item);
+            view.setText(objects[position]);
+            view.setTextColor(themeChanger.getBackgroundTextColor());
+            return convertView;
+        }
+
+        @Override
+        public View getDropDownView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.spinner_drop_down_item, null);
+            TextView view = (TextView) convertView.findViewById(R.id.drop_down_item);
+            view.setText(objects[position]);
+            view.setTextColor(themeChanger.getBackgroundTextColor());
+            return convertView;
+        }
+    }
 
 
     @Override
@@ -89,10 +134,6 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
-        ThemeChanger themeChanger = new ThemeChanger(this);
-        themeChanger.applyTheme(this, (ViewGroup) findViewById(R.id.lytGameSettingsBackground), new ArrayList<ViewGroup>());
-
 
         timeChooserLayout = (LinearLayout) findViewById(R.id.timeChooseLayout);
         difficultyChooserLayout = (LinearLayout) findViewById(R.id.difficultyChooseLayout);
@@ -111,6 +152,15 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         swapApAnim = AnimationUtils.loadAnimation(this, R.anim.swap_ap);
         swapDisapAnim = AnimationUtils.loadAnimation(this, R.anim.swap_disap);
 
+        tvTimeChooserLabel = (TextView) findViewById(R.id.tvSettingsTimeChooser);
+        tvDifficultyChooserLabel = (TextView) findViewById(R.id.tvSettingsDifficultyChooser);
+
+        themeChanger = new ThemeChanger(this);
+
+
+        textViewBackground = themeChanger.getTextViewBackgroundResource();
+        textViewInFocus = themeChanger.getTextViewInFocusBackgroundResource();
+
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         keyboard = (Keyboard) fragmentManager.findFragmentByTag("keyboard");
@@ -119,7 +169,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
 
         underKeyboardViews = new ArrayList<>();
         underKeyboardViews.add(findViewById(R.id.mode_checkbox));
-        underKeyboardViews.add(findViewById(R.id.button_ok_settings));
+        underKeyboardViews.add(findViewById(R.id.btnSettingsOk));
         underKeyboardViews.add(findViewById(R.id.gameModeSwitcher));
 
         random = new Random();
@@ -148,7 +198,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
             }
         });
 
-        btnOk = (Button) findViewById(R.id.button_ok_settings);
+        btnOk = (Button) findViewById(R.id.btnSettingsOk);
         btnOk.setOnClickListener(this);
         btnMenu = (Button) findViewById(R.id.button_menu);
         btnMenu.setOnClickListener(this);
@@ -156,7 +206,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         tvFirstWord = (TextView) findViewById(R.id.tvFirstWord);
         tvFirstWord.setText("БАЛДА");
         tvFirstWord.setOnClickListener(this);
-        tvFirstWord.setBackgroundResource(R.drawable.text_view_background);
+        tvFirstWord.setBackgroundResource(textViewBackground);
 
         pvcModeBox = (CheckBox) findViewById(R.id.pvc_mode);
         pvcModeBox.setOnCheckedChangeListener(this);
@@ -166,15 +216,32 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         timeArray = getResources().getStringArray(R.array.time_list);
         difficultyArray = getResources().getStringArray(R.array.difficulty_list);
 
+//        timeChooser = (Spinner) findViewById(R.id.timeChooser);
+//        ArrayAdapter<String> timeChooserAdapter = new ArrayAdapter(this, R.layout.spinner_drop_down_item, R.id.drop_down_item, timeArray);
+//        timeChooser.setAdapter(timeChooserAdapter);
+//        timeChooser.setSelection(timeChooserAdapter.getCount() - 1);
+
+
+        tvTimeChooserLabel.setTextColor(themeChanger.getBackgroundTextColor());
+        tvDifficultyChooserLabel.setTextColor(themeChanger.getBackgroundTextColor());
+
         timeChooser = (Spinner) findViewById(R.id.timeChooser);
-        ArrayAdapter<String> timeChooserAdapter = new ArrayAdapter(this, R.layout.spinner_drop_down_item, R.id.drop_down_item, timeArray);
-        timeChooser.setAdapter(timeChooserAdapter);
-        timeChooser.setSelection(timeChooserAdapter.getCount() - 1);
+        SpinnerAdapter spinnerAdapterTimeChooser = new SpinnerAdapter(this, R.layout.spinner_drop_down_item, R.id.drop_down_item, timeArray);
+        timeChooser.setAdapter(spinnerAdapterTimeChooser);
+        timeChooser.setSelection(spinnerAdapterTimeChooser.getCount() - 1);
+        timeChooser.setPopupBackgroundDrawable(new ColorDrawable(themeChanger.getBackgroundColor()));
+
 
         difficultyChooser = (Spinner) findViewById(R.id.difficultyChooser);
-        ArrayAdapter<String> difficultyChooserAdapter = new ArrayAdapter<String>(this, R.layout.spinner_drop_down_item, R.id.drop_down_item, difficultyArray);
-        difficultyChooser.setAdapter(difficultyChooserAdapter);
-        difficultyChooser.setSelection(difficultyChooserAdapter.getCount() / 2);
+        SpinnerAdapter spinnerAdapterDifficultyChooser = new SpinnerAdapter(this, R.layout.spinner_drop_down_item, R.id.drop_down_item, difficultyArray);
+        difficultyChooser.setAdapter(spinnerAdapterDifficultyChooser);
+        difficultyChooser.setSelection(spinnerAdapterDifficultyChooser.getCount() / 2);
+        difficultyChooser.setPopupBackgroundDrawable(new ColorDrawable(themeChanger.getBackgroundColor()));
+
+//        difficultyChooser = (Spinner) findViewById(R.id.difficultyChooser);
+//        ArrayAdapter<String> difficultyChooserAdapter = new ArrayAdapter<String>(this, R.layout.spinner_drop_down_item, R.id.drop_down_item, difficultyArray);
+//        difficultyChooser.setAdapter(difficultyChooserAdapter);
+//        difficultyChooser.setSelection(difficultyChooserAdapter.getCount() / 2);
 
 
         inFocus = null;
@@ -263,9 +330,9 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
 
         order = ORDER.COMP_SECOND;
 
+//        pvcModeBox.setButtonDrawable(themeChanger.getCheckBoxBackground());
 
     }
-
 
 
     @Override
@@ -277,7 +344,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                 hideKeyboard(NAME1);
             else if (inFocus == tvPlayer2)
                 hideKeyboard(NAME2);
-            inFocus.setBackgroundResource(R.drawable.text_view_background);
+            inFocus.setBackgroundResource(textViewBackground);
 
 
             if (player1Backspace.getVisibility() == VISIBLE) {
@@ -374,14 +441,14 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                         }
                         showBtnSwap();
                     }
-                    inFocus.setBackgroundResource(R.drawable.text_view_background);
+                    inFocus.setBackgroundResource(textViewBackground);
 
                     inFocus = tvFirstWord;
                     if (tvFirstWord.getText().length() > 0) {
                         firstWordBackspace.setVisibility(View.VISIBLE);
                         firstWordBackspace.startAnimation(bckspceApAnim);
                     }
-                    inFocus.setBackgroundResource(R.drawable.text_view_in_focus_background);
+                    inFocus.setBackgroundResource(textViewInFocus);
 
                 } else {
                     inFocus = tvFirstWord;
@@ -395,7 +462,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                     }
 
 
-                    inFocus.setBackgroundResource(R.drawable.text_view_in_focus_background);
+                    inFocus.setBackgroundResource(textViewInFocus);
                     showKeyboard(FIRST_WORD);
                 }
 
@@ -406,7 +473,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                     firstWordBackspace.setVisibility(View.INVISIBLE);
                 }
 
-                inFocus.setBackgroundResource(R.drawable.text_view_background);
+                inFocus.setBackgroundResource(textViewBackground);
                 inFocus = null;
                 hideKeyboard(FIRST_WORD);
             }
@@ -425,21 +492,21 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                         player2Backspace.startAnimation(bckspceDisapAnim);
                         player2Backspace.setVisibility(View.INVISIBLE);
                     }
-                    inFocus.setBackgroundResource(R.drawable.text_view_background);
+                    inFocus.setBackgroundResource(textViewBackground);
 
                     inFocus = tvPlayer1;
                     if (tvPlayer1.getText().length() > 0) {
                         player1Backspace.setVisibility(View.VISIBLE);
                         player1Backspace.startAnimation(bckspceApAnim);
                     }
-                    inFocus.setBackgroundResource(R.drawable.text_view_in_focus_background);
+                    inFocus.setBackgroundResource(textViewInFocus);
                 } else {
                     inFocus = tvPlayer1;
                     if (tvPlayer1.getText().length() > 0) {
                         player1Backspace.setVisibility(View.VISIBLE);
                         player1Backspace.startAnimation(bckspceApAnim);
                     }
-                    inFocus.setBackgroundResource(R.drawable.text_view_in_focus_background);
+                    inFocus.setBackgroundResource(textViewInFocus);
                     showKeyboard(NAME1);
                 }
 
@@ -448,7 +515,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                     player1Backspace.startAnimation(bckspceDisapAnim);
                     player1Backspace.setVisibility(View.INVISIBLE);
                 }
-                inFocus.setBackgroundResource(R.drawable.text_view_background);
+                inFocus.setBackgroundResource(textViewBackground);
                 inFocus = null;
                 hideKeyboard(NAME1);
 
@@ -469,21 +536,21 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                         player1Backspace.startAnimation(bckspceDisapAnim);
                         player1Backspace.setVisibility(View.INVISIBLE);
                     }
-                    inFocus.setBackgroundResource(R.drawable.text_view_background);
+                    inFocus.setBackgroundResource(textViewBackground);
 
                     inFocus = tvPlayer2;
                     if (tvPlayer2.getText().length() > 0) {
                         player2Backspace.setVisibility(View.VISIBLE);
                         player2Backspace.startAnimation(bckspceApAnim);
                     }
-                    inFocus.setBackgroundResource(R.drawable.text_view_in_focus_background);
+                    inFocus.setBackgroundResource(textViewInFocus);
                 } else {
                     inFocus = tvPlayer2;
                     if (tvPlayer2.getText().length() > 0) {
                         player2Backspace.setVisibility(View.VISIBLE);
                         player2Backspace.startAnimation(bckspceApAnim);
                     }
-                    inFocus.setBackgroundResource(R.drawable.text_view_in_focus_background);
+                    inFocus.setBackgroundResource(textViewInFocus);
                     showKeyboard(NAME2);
                 }
 
@@ -492,7 +559,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                     player2Backspace.startAnimation(bckspceDisapAnim);
                     player2Backspace.setVisibility(View.INVISIBLE);
                 }
-                inFocus.setBackgroundResource(R.drawable.text_view_background);
+                inFocus.setBackgroundResource(textViewBackground);
                 inFocus = null;
                 hideKeyboard(NAME2);
 
@@ -535,10 +602,10 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
 
         if (keyboard.isKey(v)) {
             onKeyClick(((Button) v).getText().charAt(0));
-            ((Vibrator)getSystemService(VIBRATOR_SERVICE)).vibrate(30);
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(30);
             if (inFocus == tvFirstWord)
                 if (tvFirstWord.getText().length() == 5) {
-                    inFocus.setBackgroundResource(R.drawable.text_view_background);
+                    inFocus.setBackgroundResource(textViewBackground);
                     hideKeyboard(FIRST_WORD);
                     inFocus = null;
                     firstWordBackspace.startAnimation(bckspceDisapAnim);
@@ -697,8 +764,8 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
                         intent = new Intent(thisActivity, AboutActivity.class);
                     } else if (title.equals(resources.getString(R.string.menu_item_app_rules))) {
                         intent = new Intent(thisActivity, RulesActivity.class);
-                    } else if (title.equals(resources.getString(R.string.menu_item_app_settings))){
-                        intent = new Intent(thisActivity, AppSettingsActivity.class);
+                    } else if (title.equals(resources.getString(R.string.menu_item_app_settings))) {
+                        intent = new Intent(thisActivity, ThemesActivity.class);
                     }
                     startActivity(intent);
                     return false;
@@ -732,13 +799,72 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         tvFirstWord.setText(parser.getAttributeValue(0).toUpperCase());
     }
 
+    private final int DEF_VALUE = 228;
+
     @Override
     protected void onResume() {
         super.onResume();
         changeWord();
-        ThemeChanger themeChanger = new ThemeChanger(this);
-        themeChanger.applyTheme(this, (ViewGroup) findViewById(R.id.lytGameSettingsBackground), new ArrayList<ViewGroup>());
 
+        SharedPreferences preferences = getSharedPreferences(getResources().getString(R.string.shrdPrefsAppThemes), this.MODE_PRIVATE);
+        int backgroundColor = preferences.getInt(getResources().getString(R.string.shrdPrefsAppBackgroundColor), DEF_VALUE),
+                headerNFooterColor = preferences.getInt(getResources().getString(R.string.shrdPrefsHeaderNFooterColor), DEF_VALUE),
+                gameFieldColor = preferences.getInt(getResources().getString(R.string.shrdPrefsGameFieldsColor), DEF_VALUE),
+                backgroundTextColor = preferences.getInt(getResources().getString(R.string.shrdPrefsAppBackgroundTextColor), DEF_VALUE),
+                headerNFooterTextColor = preferences.getInt(getResources().getString(R.string.shrdPrefsHeaderNFooterTextColor), DEF_VALUE),
+                gameFieldTextColor = preferences.getInt(getResources().getString(R.string.shrdPrefsGameFieldsTextColor), DEF_VALUE);
+
+        if (backgroundColor == DEF_VALUE || headerNFooterColor == DEF_VALUE || gameFieldColor == DEF_VALUE
+                || backgroundTextColor == DEF_VALUE || headerNFooterTextColor == DEF_VALUE || gameFieldTextColor == DEF_VALUE) {
+
+            String sharedPrefsBackgroundKey = getResources().getString(R.string.shrdPrefsAppBackgroundColor);
+            String sharedPrefsHeaderNFooterKey = getResources().getString(R.string.shrdPrefsHeaderNFooterColor);
+            String sharedPrefsGameFieldsKey = getResources().getString(R.string.shrdPrefsGameFieldsColor);
+
+
+            String sharedPrefsBackgroundTextColorKey = getResources().getString(R.string.shrdPrefsAppBackgroundTextColor);
+            String sharedPrefsHeaderNFooterTextColorKey = getResources().getString(R.string.shrdPrefsHeaderNFooterTextColor);
+            String sharedPrefsGameFieldsTextColorKey = getResources().getString(R.string.shrdPrefsGameFieldsTextColor);
+
+            backgroundColor = getResources().getColor(R.color.app_background_color_1);
+            headerNFooterColor = getResources().getColor(R.color.app_elements_color_4);
+            gameFieldColor = getResources().getColor(R.color.game_fields_color_4);
+            backgroundTextColor = getResources().getColor(R.color.textColor);
+            headerNFooterTextColor = getResources().getColor(R.color.textColorWhite);
+            gameFieldTextColor = getResources().getColor(R.color.textColorWhite);
+
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putInt(sharedPrefsBackgroundKey, backgroundColor);
+            editor.putInt(sharedPrefsHeaderNFooterKey, headerNFooterColor);
+            editor.putInt(sharedPrefsGameFieldsKey, gameFieldColor);
+            editor.putInt(sharedPrefsBackgroundTextColorKey, backgroundTextColor);
+            editor.putInt(sharedPrefsHeaderNFooterTextColorKey, headerNFooterTextColor);
+            editor.putInt(sharedPrefsGameFieldsTextColorKey, gameFieldTextColor);
+            editor.apply();
+        }
+
+
+        timeChooser = (Spinner) findViewById(R.id.timeChooser);
+        SpinnerAdapter spinnerAdapter = new SpinnerAdapter(this, R.layout.spinner_drop_down_item, R.id.drop_down_item, timeArray);
+        timeChooser.setAdapter(spinnerAdapter);
+        timeChooser.setSelection(spinnerAdapter.getCount() - 1); // todo должно выставляться значение сохраненное с предыдущего раза
+        timeChooser.setPopupBackgroundDrawable(new ColorDrawable(themeChanger.getBackgroundColor()));
+
+        difficultyChooser = (Spinner) findViewById(R.id.difficultyChooser);
+        SpinnerAdapter spinnerAdapterDifficultyChooser = new SpinnerAdapter(this, R.layout.spinner_drop_down_item, R.id.drop_down_item, difficultyArray);
+        difficultyChooser.setAdapter(spinnerAdapterDifficultyChooser);
+        difficultyChooser.setSelection(spinnerAdapterDifficultyChooser.getCount() / 2); // todo аналогично пункту выше
+        difficultyChooser.setPopupBackgroundDrawable(new ColorDrawable(themeChanger.getBackgroundColor()));
+
+        tvTimeChooserLabel.setTextColor(themeChanger.getBackgroundTextColor());
+        tvDifficultyChooserLabel.setTextColor(themeChanger.getBackgroundTextColor());
+
+        textViewBackground = themeChanger.getTextViewBackgroundResource();
+        textViewInFocus = themeChanger.getTextViewInFocusBackgroundResource();
+
+//        pvcModeBox.setButtonDrawable(themeChanger.getCheckBoxBackground());
+
+        setTheme();
     }
 
     private void onKeyClick(char ch) {

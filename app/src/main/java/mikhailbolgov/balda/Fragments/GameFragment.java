@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Vibrator;
@@ -21,10 +23,10 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 import mikhailbolgov.balda.Balda;
@@ -35,11 +37,13 @@ import mikhailbolgov.balda.MyLog;
 import mikhailbolgov.balda.Player;
 import mikhailbolgov.balda.R;
 import mikhailbolgov.balda.Settings;
+import mikhailbolgov.balda.ThemeChangeable;
+import mikhailbolgov.balda.ThemeChanger;
 import mikhailbolgov.balda.Timer;
 import mikhailbolgov.balda.VocsCreatedListener;
 import mikhailbolgov.balda.Word;
 
-public class GameFragment extends Fragment implements View.OnClickListener, Timer.TimerEventListener, VocsCreatedListener {
+public class GameFragment extends Fragment implements View.OnClickListener, Timer.TimerEventListener, VocsCreatedListener, ThemeChangeable {
 
     private CellView cells[][];
     private Button keyboard[];
@@ -81,6 +85,8 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
     private Button btnPassMove;
     private boolean passedOnce;
     private int createdVocsNumber;
+
+    private int cellViewBackground, activePlayerBackground, notActivePlayerBackground, newLetterBackground, letterAddedInWordBackground, cellInFocusBackground;
 
     private void removeAllListeners() {
         for (int rowCtr = 0; rowCtr < N; ++rowCtr)
@@ -151,6 +157,17 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
         gameFragment = this;
 
         createdVocsNumber = 0;
+
+        ThemeChanger themeChanger = new ThemeChanger(context);
+
+        cellViewBackground = themeChanger.getCellViewBackground();
+        activePlayerBackground = themeChanger.getActivePlayerBackground();
+        notActivePlayerBackground = themeChanger.getNotActivePlayerBackground();
+        cellInFocusBackground = themeChanger.getCellInFocusBackground();
+        letterAddedInWordBackground = themeChanger.getLetterAddedInWordBackground();
+        newLetterBackground = themeChanger.getNewLetterBackground();
+
+
     }
 
     @Override
@@ -182,6 +199,7 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
         super.onSaveInstanceState(outState);
         outState.putSerializable("balda", balda);
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -218,7 +236,7 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
 
         newWord = null;
-        btnAddWord = (Button) contentView.findViewById(R.id.button_add_word);
+        btnAddWord = (Button) contentView.findViewById(R.id.btnGameOk);
 //        btnAddWord.setEnabled(false);
         btnAddWord.setVisibility(View.INVISIBLE);
         btnAddWord.setEnabled(false);
@@ -254,13 +272,22 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
         cells[4][4] = (CellView) contentView.findViewById(R.id.cell44);
 
 
+
+        boolean boldText = new ThemeChanger(context).boldText();
+
         for (int row = 0; row < N; ) {
             for (int col = 0; col < N; ) {
                 cells[row][col].setCell(balda.getCell(row, col));
+
+                if(boldText)
+                    cells[row][col].setTypeface(null, Typeface.BOLD);
+                else cells[row][col].setTypeface(null, Typeface.NORMAL);
+
                 ++col;
             }
             ++row;
         }
+
 
         setFirstWord(balda.getFirstWord());
 
@@ -337,8 +364,10 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
         timer = (Timer) contentView.findViewById(R.id.timer);
 
-        if (!balda.isModeTimeLimited())
+        if (!balda.isModeTimeLimited())        {         // кажется код избыточен и крив. сделай че нить
             timer.setVisibility(View.GONE);
+            contentView.findViewById(R.id.lytGameInfoSeparator1).setVisibility(View.GONE);
+        }
         else
             timer.setVisibility(View.VISIBLE);
 
@@ -350,7 +379,9 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
         if (balda.isModeTimeLimited())
             showTimerWarning(GAME_STAGE_BEGINNING);
 
-        playersInfo.get(balda.getCurrentPlayer()).setBackgroundResource(R.color.active_player_background);
+//        playersInfo.get(balda.getCurrentPlayer()).setBackgroundResource(R.color.active_player_background);
+        playersInfo.get(balda.getCurrentPlayer()).setBackgroundColor(activePlayerBackground);
+
 
         waitLayout = (ViewGroup) contentView.findViewById(R.id.wait_layout);
 
@@ -368,6 +399,7 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
         btnPassMove = (Button) contentView.findViewById(R.id.btn_pass);
         btnPassMove.setOnClickListener(this);
 
+        contentView.invalidate();
 
         return contentView;
     }
@@ -451,8 +483,6 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
     @Override
     public void onClick(View v) {
-
-
         if (balda.isModeGameWithComputer()
                 & !balda.isCurrentPlayerComputer()
                 & newWordView.getText().length() != 0 & newWord != null) {
@@ -477,7 +507,7 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
         for (int rowCtr = 0; rowCtr < N; ++rowCtr)
             for (int colCtr = 0; colCtr < N; ++colCtr)
                 if (v.getId() == cells[rowCtr][colCtr].getId()) {
-
+                    ((Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE)).vibrate(resources.getInteger(R.integer.gameFieldVibrationDuration));
                     onTextViewClick(cells[rowCtr][colCtr]);
                     rowCtr = N + 1;
                     break;
@@ -485,7 +515,7 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
         for (int keyCtr = 0; keyCtr < 32; ++keyCtr)
             if (v.getId() == keyboard[keyCtr].getId()) {
-                ((Vibrator)context.getSystemService(Context.VIBRATOR_SERVICE)).vibrate(30);
+                ((Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE)).vibrate(resources.getInteger(R.integer.keyboardVibrationDuration));
                 onKeyClick(keyboard[keyCtr]);
                 break;
             }
@@ -521,6 +551,8 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
             passMove();
 
     }
+
+    // todo при выборе поля и выключении экрана, не закрывается клавиатура
 
     private void onAddWordClick() {
         removeAllListeners();
@@ -618,7 +650,7 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
             }).setOnCancelListener(new DialogInterface.OnCancelListener() {
                 @Override
                 public void onCancel(DialogInterface dialog) {
-                    if(!balda.isGameOver() && !balda.isCurrentPlayerComputer())
+                    if (!balda.isGameOver() && !balda.isCurrentPlayerComputer())
                         restoreAllListeners();
                 }
             });
@@ -665,8 +697,10 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
     private void addWord() {
         Player currentPlayer = balda.getCurrentPlayer();
-        playersInfo.get(currentPlayer).setBackgroundResource(R.color.not_active_player_background);
-        playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.active_player_background);
+//        playersInfo.get(currentPlayer).setBackgroundResource(R.color.not_active_player_background);
+//        playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.active_player_background);
+        playersInfo.get(currentPlayer).setBackgroundColor(notActivePlayerBackground);
+        playersInfo.get(balda.getNotActivePlayer()).setBackgroundColor(activePlayerBackground);
 
         if (!balda.isCurrentPlayerComputer())
             newWordView.setText("");
@@ -697,7 +731,8 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
         selectedCell.setLetter(key.getText().charAt(0));
         newCell = selectedCell;
-        newCell.setBackgroundResource(R.color.newLetter);
+//        newCell.setBackgroundResource(R.color.newLetter);
+        newCell.setBackgroundColor(newLetterBackground);
         newWord = null;
         newWordView.setText("");
         hideKeyboard();
@@ -724,7 +759,8 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
                 if (newWord == null)
                     newWord = new Word();
                 if (newWord.addLetter(cellView.getCell())) {
-                    cellView.setBackgroundResource(R.color.letterAddedInWord);
+//                    cellView.setBackgroundResource(R.color.letterAddedInWord);
+                    cellView.setBackgroundColor(letterAddedInWordBackground);
                     String string = "";
                     string = (String) newWordView.getText() + cellView.getCell().getLetter();
                     newWordView.setText(string);
@@ -742,7 +778,8 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
         if (newCell != null) {
             newCell.clean();
-            newCell.setBackgroundResource(R.color.cellBackground);
+//            newCell.setBackgroundResource(R.color.cellBackground);       test of new way to change cell color
+            newCell.setBackgroundColor(cellViewBackground);
             newCell = null;
         }
         newWord = null;
@@ -753,7 +790,8 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
             selectedCell = cell;
             resetCellsBackground();
-            selectedCell.setBackgroundResource(R.color.inFocusBackground);
+//            selectedCell.setBackgroundResource(R.color.inFocusBackground);
+            selectedCell.setBackgroundColor(cellInFocusBackground);
         } else {
             hideKeyboard();
             selectedCell = null;
@@ -764,8 +802,10 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
     private void resetCellsBackground() {
         for (int row = 0; row < N; ) {
             for (int col = 0; col < N; ) {
-                cells[row][col].setBackgroundResource(R.color.cellBackground);
+//                cells[row][col].setBackgroundResource(R.color.cellBackground);
+                cells[row][col].setBackgroundColor(cellViewBackground);
                 ++col;
+
             }
             ++row;
         }
@@ -796,7 +836,7 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
 
     public void passMove() {
 
-        if(balda.isGameOver())
+        if (balda.isGameOver())
             return;
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -806,8 +846,10 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     Player currentPlayer = balda.getCurrentPlayer();
-                    playersInfo.get(currentPlayer).setBackgroundResource(R.color.not_active_player_background);
-                    playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.active_player_background);
+//                    playersInfo.get(currentPlayer).setBackgroundResource(R.color.not_active_player_background);
+//                    playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.active_player_background);
+                    playersInfo.get(currentPlayer).setBackgroundColor(notActivePlayerBackground);
+                    playersInfo.get(balda.getNotActivePlayer()).setBackgroundColor(activePlayerBackground);
                     balda.skipMove();
                     newWord = null;
                     newCell = null;
@@ -856,8 +898,10 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
                 });
 
                 Player currentPlayer = balda.getCurrentPlayer();
-                playersInfo.get(currentPlayer).setBackgroundResource(R.color.not_active_player_background);
-                playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.active_player_background);
+//                playersInfo.get(currentPlayer).setBackgroundResource(R.color.not_active_player_background);
+//                playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.active_player_background);
+                playersInfo.get(currentPlayer).setBackgroundColor(notActivePlayerBackground);
+                playersInfo.get(balda.getNotActivePlayer()).setBackgroundColor(activePlayerBackground);
 
                 if (!balda.isCurrentPlayerComputer())
                     newWordView.setText("");
@@ -880,8 +924,10 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Player currentPlayer = balda.getCurrentPlayer();
-                        playersInfo.get(currentPlayer).setBackgroundResource(R.color.not_active_player_background);
-                        playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.active_player_background);
+//                        playersInfo.get(currentPlayer).setBackgroundResource(R.color.not_active_player_background);
+//                        playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.active_player_background);
+                        playersInfo.get(currentPlayer).setBackgroundColor(notActivePlayerBackground);
+                        playersInfo.get(balda.getNotActivePlayer()).setBackgroundColor(activePlayerBackground);
 
                         if (!balda.isCurrentPlayerComputer())
                             newWordView.setText("");
@@ -924,8 +970,10 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
     @Override
     public void moveEnd() {
         Player currentPlayer = balda.getCurrentPlayer();
-        playersInfo.get(currentPlayer).setBackgroundResource(R.color.active_player_background);
-        playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.not_active_player_background);
+//        playersInfo.get(currentPlayer).setBackgroundResource(R.color.active_player_background);
+//        playersInfo.get(balda.getNotActivePlayer()).setBackgroundResource(R.color.not_active_player_background);
+        playersInfo.get(currentPlayer).setBackgroundColor(activePlayerBackground);
+        playersInfo.get(balda.getNotActivePlayer()).setBackgroundColor(notActivePlayerBackground);
         balda.skipMove();
         newWord = null;
         newCell = null;
@@ -991,6 +1039,26 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
             createdVocsNumber = 0;
         }
 
+    }
+
+    @Override
+    public void setTheme() {
+        ThemeChanger themeChanger = new ThemeChanger(getContext());
+
+        ArrayList<View> headerNFooter = new ArrayList<>();
+        headerNFooter.add(getView().findViewById(R.id.lytGameHeader));
+        headerNFooter.add(getView().findViewById(R.id.btnGameOk));
+
+        ArrayList<CellView> cellViews = new ArrayList<>(Arrays.asList(cells[0]));
+        cellViews.addAll(Arrays.asList(cells[1]));
+        cellViews.addAll(Arrays.asList(cells[2]));
+        cellViews.addAll(Arrays.asList(cells[3]));
+        cellViews.addAll(Arrays.asList(cells[4]));
+
+
+
+        themeChanger.applyTheme(context, (ViewGroup) getView().findViewById(R.id.lytGameBackground), headerNFooter);
+        themeChanger.setGameFieldColor(context, cellViews);
     }
 
     public interface OnTimerPauseListener {
@@ -1087,7 +1155,6 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
     }
 
 
-
     public void pressAddWordButton() {
         btnAddWord.performClick();
     }
@@ -1137,14 +1204,20 @@ public class GameFragment extends Fragment implements View.OnClickListener, Time
         btnAddWord.setEnabled(false);
     }
 
+
+    //Ниже вообще какая то хуйня невьебенная творится
+
     @Override
     public void onPause() {
         super.onPause();
         //Toast.makeText(context, "onPause()", Toast.LENGTH_SHORT).show();
     }
+
     @Override
     public void onResume() {
         super.onPause();
+        setTheme();
+
         //Toast.makeText(context, "onResume()", Toast.LENGTH_SHORT).show();
     }
 

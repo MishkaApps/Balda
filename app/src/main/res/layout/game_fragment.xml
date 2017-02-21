@@ -15,7 +15,7 @@
 
 
         <LinearLayout
-            android:id="@+id/playersInfoVLayout"
+            android:id="@+id/lytGameHeader"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -53,6 +53,20 @@
 
             </LinearLayout>
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/lytGameInfoSeparator1">
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/separator_color"
+                    android:tag="@string/tagLinefulColor"/>
+
+            </FrameLayout>
+
 
             <view
                 android:id="@+id/timer"
@@ -62,7 +76,23 @@
                 android:layout_weight="1"
                 android:background="@color/lightGrayAppColor"
                 android:gravity="center"
-                android:textColor="@color/textColorWhite" />
+                android:textColor="@color/textColorWhite"
+                android:tag="timer_tag"/>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/lytGameInfoSeparator2" >
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/separator_color"
+                    android:tag="@string/tagLinefulColor"/>
+
+            </FrameLayout>
 
             <LinearLayout
                 android:id="@+id/layout_player2"
@@ -97,471 +127,482 @@
 
         </LinearLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2" />
-
         <LinearLayout
+            android:id="@+id/lytGameBackground"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="5.2"
+            android:layout_weight="8"
             android:orientation="vertical">
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
             <LinearLayout
-                android:id="@+id/row_0"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5.2"
+                android:orientation="vertical">
 
-                <view
-                    android:id="@+id/cell00"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                <LinearLayout
+                    android:id="@+id/row_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cellBackground"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="12dp" />
+                    android:orientation="horizontal">
 
-                <view
-                    android:id="@+id/cell01"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    <view
+                        android:id="@+id/cell00"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp" />
+
+                    <view
+                        android:id="@+id/cell01"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell02"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp" />
+
+                    <view
+                        android:id="@+id/cell03"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell04"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cellBackground"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
+                    android:orientation="horizontal">
 
-                <view
-                    android:id="@+id/cell02"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    <view
+                        android:id="@+id/cell10"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell11"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell12"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell13"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell14"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cellBackground"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="12dp" />
+                    android:orientation="horizontal">
 
-                <view
-                    android:id="@+id/cell03"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    <view
+                        android:id="@+id/cell20"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell21"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell22"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell23"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell24"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cellBackground"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
+                    android:orientation="horizontal">
 
-                <view
-                    android:id="@+id/cell04"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    <view
+                        android:id="@+id/cell30"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell31"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell32"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell33"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell34"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginRight="2dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cellBackground"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
+                    android:orientation="horizontal">
 
+                    <view
+                        android:id="@+id/cell40"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell41"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell42"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell43"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+
+                    <view
+                        android:id="@+id/cell44"
+                        class="mikhailbolgov.balda.CellView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginBottom="2dp"
+
+                        android:layout_marginRight="2dp"
+                        android:background="@color/cellBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text=" " />
+                </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/row_1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <view
-                    android:id="@+id/cell10"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell11"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell12"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell13"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell14"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginRight="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/row_2"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <view
-                    android:id="@+id/cell20"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell21"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell22"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell23"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell24"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginRight="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/row_3"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <view
-                    android:id="@+id/cell30"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell31"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell32"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:focusable="true"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell33"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell34"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginRight="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/row_4"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <view
-                    android:id="@+id/cell40"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell41"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginBottom="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell42"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginBottom="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell43"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginBottom="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-
-                <view
-                    android:id="@+id/cell44"
-                    class="mikhailbolgov.balda.CellView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="1dp"
-                    android:layout_marginBottom="2dp"
-
-                    android:layout_marginRight="2dp"
-                    android:background="@color/cellBackground"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:text=" " />
-            </LinearLayout>
-        </LinearLayout>
-
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2" />
-
-        <LinearLayout
-            android:id="@+id/lytControl"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.6"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_delete_word"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="3"
-                android:background="@color/activityBackground"
-                android:stateListAnimator="@null"
-                android:text="@string/button_delete_word"
-                android:textColor="@color/textColorWhite" />
 
             <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="0.5" />
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
 
-            <TextView
-                android:id="@+id/text_view_new_word"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="3"
-                android:background="@drawable/text_view_background"
-                android:gravity="center_vertical|center_horizontal" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="0.5" />
-
-            <FrameLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:paddingRight="30dp">
+            <LinearLayout
+                android:id="@+id/lytControl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btn_pass"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:id="@+id/button_delete_word"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:background="@drawable/pass"
-                    android:paddingRight="10dp" />
-            </FrameLayout>
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:stateListAnimator="@null"
+                    android:tag="@string/tagEraseButton"
+                    android:text="@string/button_delete_word"
+                    android:textColor="@color/textColorWhite" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:id="@+id/text_view_new_word"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:tag="@string/tagLinefulDrawable"
+                    android:background="@drawable/text_view_background_dark_text"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:paddingRight="30dp">
+
+                    <Button
+                        android:id="@+id/btn_pass"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/pass"
+                        android:paddingRight="10dp"
+                        android:tag="@string/iconTagSkipMove"/>
+                </FrameLayout>
 
 
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8" />
+
+
+            <Button
+                android:id="@+id/btnGameOk"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/darkGrayAppColor"
+                android:stateListAnimator="@null"
+                android:text="@string/button_ok"
+                android:textColor="@color/textColorWhite" />
         </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.8" />
-
-
-        <Button
-            android:id="@+id/button_add_word"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/darkGrayAppColor"
-            android:stateListAnimator="@null"
-            android:text="@string/button_ok"
-            android:textColor="@color/textColorWhite" />
 
     </LinearLayout>
 
