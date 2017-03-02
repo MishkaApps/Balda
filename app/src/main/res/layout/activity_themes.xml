@@ -78,7 +78,7 @@
                             android:layout_width="@dimen/colorViewWidth"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:tag="@string/theme1">
+                            android:tag="@string/theme2">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -92,7 +92,7 @@
                             android:layout_width="@dimen/colorViewWidth"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:tag="@string/theme1">
+                            android:tag="@string/theme3">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -117,16 +117,17 @@
                         </RelativeLayout>
 
                         <RelativeLayout
-                            android:id="@+id/app_background_color_5_lyt"
+                            android:id="@+id/lyt_theme_5"
                             android:layout_width="@dimen/colorViewWidth"
                             android:layout_height="match_parent"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:tag="@string/theme5">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@color/app_background_color_3"
-                                android:tag="@string/tagTextWhite" />
+                                android:tag="@string/tagTextBlack" />
                         </RelativeLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -136,19 +137,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.3">
-
-                    <Space
+                    <Button
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="right|center_vertical"
-                        android:textColor="@color/text_link"
+                        android:layout_weight="2"
+                        android:gravity="center"
                         android:text="@string/extended_settings"
+                        android:background="@android:color/transparent"
                         android:id="@+id/tv_extended_settings"/>
 
                 </LinearLayout>

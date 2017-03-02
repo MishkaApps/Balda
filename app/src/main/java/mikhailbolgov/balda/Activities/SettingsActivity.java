@@ -817,30 +817,34 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         if (backgroundColor == DEF_VALUE || headerNFooterColor == DEF_VALUE || gameFieldColor == DEF_VALUE
                 || backgroundTextColor == DEF_VALUE || headerNFooterTextColor == DEF_VALUE || gameFieldTextColor == DEF_VALUE) {
 
-            String sharedPrefsBackgroundKey = getResources().getString(R.string.shrdPrefsAppBackgroundColor);
-            String sharedPrefsHeaderNFooterKey = getResources().getString(R.string.shrdPrefsHeaderNFooterColor);
-            String sharedPrefsGameFieldsKey = getResources().getString(R.string.shrdPrefsGameFieldsColor);
+            themeChanger.rememberPresetTheme(getResources().getString(R.string.theme1));
 
 
-            String sharedPrefsBackgroundTextColorKey = getResources().getString(R.string.shrdPrefsAppBackgroundTextColor);
-            String sharedPrefsHeaderNFooterTextColorKey = getResources().getString(R.string.shrdPrefsHeaderNFooterTextColor);
-            String sharedPrefsGameFieldsTextColorKey = getResources().getString(R.string.shrdPrefsGameFieldsTextColor);
-
-            backgroundColor = getResources().getColor(R.color.app_background_color_1);
-            headerNFooterColor = getResources().getColor(R.color.app_elements_color_4);
-            gameFieldColor = getResources().getColor(R.color.game_fields_color_4);
-            backgroundTextColor = getResources().getColor(R.color.textColor);
-            headerNFooterTextColor = getResources().getColor(R.color.textColorWhite);
-            gameFieldTextColor = getResources().getColor(R.color.textColorWhite);
-
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putInt(sharedPrefsBackgroundKey, backgroundColor);
-            editor.putInt(sharedPrefsHeaderNFooterKey, headerNFooterColor);
-            editor.putInt(sharedPrefsGameFieldsKey, gameFieldColor);
-            editor.putInt(sharedPrefsBackgroundTextColorKey, backgroundTextColor);
-            editor.putInt(sharedPrefsHeaderNFooterTextColorKey, headerNFooterTextColor);
-            editor.putInt(sharedPrefsGameFieldsTextColorKey, gameFieldTextColor);
-            editor.apply();
+//
+//            String sharedPrefsBackgroundKey = getResources().getString(R.string.shrdPrefsAppBackgroundColor);
+//            String sharedPrefsHeaderNFooterKey = getResources().getString(R.string.shrdPrefsHeaderNFooterColor);
+//            String sharedPrefsGameFieldsKey = getResources().getString(R.string.shrdPrefsGameFieldsColor);
+//
+//
+//            String sharedPrefsBackgroundTextColorKey = getResources().getString(R.string.shrdPrefsAppBackgroundTextColor);
+//            String sharedPrefsHeaderNFooterTextColorKey = getResources().getString(R.string.shrdPrefsHeaderNFooterTextColor);
+//            String sharedPrefsGameFieldsTextColorKey = getResources().getString(R.string.shrdPrefsGameFieldsTextColor);
+//
+//            backgroundColor = getResources().getColor(R.color.app_background_color_1);
+//            headerNFooterColor = getResources().getColor(R.color.app_elements_color_4);
+//            gameFieldColor = getResources().getColor(R.color.game_fields_color_4);
+//            backgroundTextColor = getResources().getColor(R.color.textColor);
+//            headerNFooterTextColor = getResources().getColor(R.color.textColorWhite);
+//            gameFieldTextColor = getResources().getColor(R.color.textColorWhite);
+//
+//            SharedPreferences.Editor editor = preferences.edit();
+//            editor.putInt(sharedPrefsBackgroundKey, backgroundColor);
+//            editor.putInt(sharedPrefsHeaderNFooterKey, headerNFooterColor);
+//            editor.putInt(sharedPrefsGameFieldsKey, gameFieldColor);
+//            editor.putInt(sharedPrefsBackgroundTextColorKey, backgroundTextColor);
+//            editor.putInt(sharedPrefsHeaderNFooterTextColorKey, headerNFooterTextColor);
+//            editor.putInt(sharedPrefsGameFieldsTextColorKey, gameFieldTextColor);
+//            editor.apply();
         }
 
 

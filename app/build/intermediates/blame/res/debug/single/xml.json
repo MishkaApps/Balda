@@ -24,6 +24,10 @@
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_ch.xml"
     },
     {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\temp.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\temp.xml"
+    },
+    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voc_j.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\xml\\voc_j.xml"
     },

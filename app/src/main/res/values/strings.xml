@@ -39,10 +39,11 @@
     <string name="recent_names_filename">recent_names</string>
     <string name="background_color">ФОН</string>
     <string name="themes">ТЕМЫ</string>
-    <string name="buttons_headers_color">ЭЛЕМЕНТЫ ИНТЕРФЕЙСА</string>
+    <string name="buttons_headers_color">ОСНОВНОЙ ЦВЕТ</string>
     <string name="use_bold">ЭЛЕМЕНТЫ ИНТЕРФЕЙСА</string>
     <string name="game_fields_color">ЦВЕТ ИГРОВОГО ПОЛЯ</string>
-    <string name="extended_settings">расширенные настройки >></string>
+    <string name="extended_settings">расширенные настройки</string>
+    <string name="tag_exception">exception</string>
 
     <string name="menu_item_user_voc">Словарь пользователя</string>
     <string name="menu_item_app_rules">Правила</string>
@@ -73,8 +74,8 @@
     <string name="letter_B">Б</string>
 
 
-    // строковые константы для файла настроек приложения ( цвет фона, цвет элементов интерфейса и
-    т.д.
+    <!--строковые константы для файла настроек приложения ( цвет фона, цвет элементов интерфейса и-->
+    <!--т.д.-->
     <string name="shrdPrefsAppThemes">APP_SETTINGS</string>
 
     <string name="shrdPrefsAppBackgroundColor">APP_BACKGROUND</string>
@@ -107,4 +108,6 @@
     <string name="theme2">theme2</string>
     <string name="theme3">theme3</string>
     <string name="theme4">theme4</string>
+    <string name="theme5">theme5</string>
+    <string name="selectedTheme">selected_theme</string>
 </resources>

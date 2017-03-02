@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="cellBackground">#FFEBEE</color>
-    <color name="cell_in_focus_background_white_text">#1b5e20</color>
-    <color name="cell_in_focus_background_dark_text">#81c784</color>
+    <color name="cell_in_focus_background_white_text">#2e7d32</color>
+    <color name="cell_in_focus_background_dark_text">#a5d6a7</color>
     <!--<color name="inFocusBackground">#ffcce9c4</color>-->                     //old
     <color name="letter_added_in_word_dark_text">#9fa8da</color>
-    <color name="letter_added_in_word_white_text">#7986cb</color>
+    <color name="letter_added_in_word_white_text">#5c6bc0</color>
     <!--<color name="letter_added_in_word_white">#ffaab4e6</color>-->                     //old
     <color name="new_letter_dark_text">#e6ee9c</color>
-    <color name="new_letter_white_text">#9e9d24</color>
+    <color name="new_letter_white_text">#afb42b</color>
     <!--<color name="new_letter_dark">#ffe6e4a3</color>-->                                  //old
     <color name="gameFieldBackground">#ffd2d2d2</color>
     <color name="outOfFocusBackground">#D2D2D2</color>
     <color name="scoreTitleBackground">#ffaa96b4</color>
 
-    <color name="text_link">#6200ea</color>
+    <color name="text_link">#ffffff</color>
 
     <color name="textColor">#000000</color>
     <color name="textColorWhite">#ffffff</color>
@@ -36,26 +36,201 @@
     <color name="transparent">#ffffff</color>
     <color name="activityBackground">#ffffffff</color>
     <color name="active_player_background_dark_text">#81c784</color>
-    <color name="active_player_background_white_text">#1b5e20</color>
+    <color name="active_player_background_white_text">#2e7d32</color>
     <color name="not_active_player_background">@color/darkGrayAppColor</color>
     <color name="wait_layout_background">#82ffffff</color>
 
 
+    <!--<color name="app_background_color_1">#ffffff</color>  // theme 1, theme 4-->
+    <!--<color name="app_background_color_2">#424242</color>  // theme 3-->
+    <!--<color name="app_background_color_3">#4e342e</color>  // theme 5-->
+    <!--<color name="app_background_color_4">#3e2723</color>-->
+    <!--<color name="app_background_color_5">#5c6bc0</color>-->
+    <!--<color name="app_background_color_6">#311b92</color>-->
+    <!--<color name="app_background_color_7">#1a237e</color>-->
+    <!--<color name="app_background_color_8">#283593</color>  // theme 2-->
+    <!--<color name="app_background_color_9">#bdbdbd</color>-->
+
+    <!--<color name="app_elements_color_1">#ffffff</color>-->
+    <!--<color name="app_elements_color_2">#283593</color>-->
+    <!--<color name="app_elements_color_3">#3e2723</color>  // theme 5-->
+    <!--<color name="app_elements_color_4">#212121</color>  // theme 1, theme 3-->
+    <!--<color name="app_elements_color_5">#5c6bc0</color>-->
+    <!--<color name="app_elements_color_6">#311b92</color>-->
+    <!--<color name="app_elements_color_7">#1a237e</color>  // theme 2-->
+    <!--<color name="app_elements_color_8">#283593</color>-->
+    <!--<color name="app_elements_color_9">#e0e0e0</color>  // theme 4-->
+
+    <!--<color name="game_fields_color_1">#bcaaa4</color>-->
+    <!--<color name="game_fields_color_2">#b0bec5</color>-->
+    <!--<color name="game_fields_color_3">#3e2723</color>-->
+    <!--<color name="game_fields_color_4">#212121</color>  // theme 1, theme 3-->
+    <!--<color name="game_fields_color_5">#5c6bc0</color>  // theme 2-->
+    <!--<color name="game_fields_color_6">#311b92</color>-->
+    <!--<color name="game_fields_color_7">#1a237e</color>-->
+    <!--<color name="game_fields_color_8">#283593</color>-->
+    <!--<color name="game_fields_color_9">#eeeeee</color>  // theme 4-->
+    <!--<color name="game_fields_color_10">#3e2723</color> // theme 5-->
+
     <color name="app_background_color_1">#ffffff</color>
-    <color name="app_background_color_2">#424242</color>
-    <color name="app_background_color_3">#4e342e</color>
-    <color name="app_background_color_4">#3e2723</color>
+
+    <color name="app_background_color_2">#F5F5F5</color>
+    <color name="app_background_color_3">#EEEEEE</color>
+    <color name="app_background_color_4">#E0E0E0</color>
+    <color name="app_background_color_5">#9E9E9E</color>
+    <color name="app_background_color_6">#616161</color>
+    <color name="app_background_color_7">#424242</color>
+    <color name="app_background_color_8">#212121</color>
+
+    <color name="app_background_color_9">#C5CAE9</color>
+    <color name="app_background_color_10">#9FA8DA</color>
+    <color name="app_background_color_11">#7986CB</color>
+    <color name="app_background_color_12">#3F51B5</color>
+    <color name="app_background_color_13">#303F9F</color>
+    <color name="app_background_color_14">#283593</color>
+    <color name="app_background_color_15">#1A237E</color>
+
+    <color name="app_background_color_16">#B2DFDB</color>
+    <color name="app_background_color_17">#80CBC4</color>
+    <color name="app_background_color_18">#4DB6AC</color>
+    <color name="app_background_color_19">#009688</color>
+    <color name="app_background_color_20">#00796B</color>
+    <color name="app_background_color_21">#00695C</color>
+    <color name="app_background_color_22">#004D40</color>
+
+    <color name="app_background_color_23">#D7CCC8</color>
+    <color name="app_background_color_24">#BCAAA4</color>
+    <color name="app_background_color_25">#A1887F</color>
+    <color name="app_background_color_26">#795548</color>
+    <color name="app_background_color_27">#5D4037</color>
+    <color name="app_background_color_28">#4E342E</color>
+    <color name="app_background_color_29">#3E2723</color>
+
+    <color name="app_background_color_30">#FFCDD2</color>
+    <color name="app_background_color_31">#EF9A9A</color>
+    <color name="app_background_color_32">#EF5350</color>
+    <color name="app_background_color_33">#E53935</color>
+    <color name="app_background_color_34">#D32F2F</color>
+    <color name="app_background_color_35">#C62828</color>
+    <color name="app_background_color_36">#B71C1C</color>
+
+
+    <color name="game_fields_color_1">#ffffff</color>
+
+    <color name="game_fields_color_2">#F5F5F5</color>
+    <color name="game_fields_color_3">#EEEEEE</color>
+    <color name="game_fields_color_4">#E0E0E0</color>
+    <color name="game_fields_color_5">#9E9E9E</color>
+    <color name="game_fields_color_6">#616161</color>
+    <color name="game_fields_color_7">#424242</color>
+    <color name="game_fields_color_8">#212121</color>
+
+    <color name="game_fields_color_9">#C5CAE9</color>
+    <color name="game_fields_color_10">#9FA8DA</color>
+    <color name="game_fields_color_11">#7986CB</color>
+    <color name="game_fields_color_12">#3F51B5</color>
+    <color name="game_fields_color_13">#303F9F</color>
+    <color name="game_fields_color_14">#283593</color>
+    <color name="game_fields_color_15">#1A237E</color>
+
+    <color name="game_fields_color_16">#B2DFDB</color>
+    <color name="game_fields_color_17">#80CBC4</color>
+    <color name="game_fields_color_18">#4DB6AC</color>
+    <color name="game_fields_color_19">#009688</color>
+    <color name="game_fields_color_20">#00796B</color>
+    <color name="game_fields_color_21">#00695C</color>
+    <color name="game_fields_color_22">#004D40</color>
+
+    <color name="game_fields_color_23">#D7CCC8</color>
+    <color name="game_fields_color_24">#BCAAA4</color>
+    <color name="game_fields_color_25">#A1887F</color>
+    <color name="game_fields_color_26">#795548</color>
+    <color name="game_fields_color_27">#5D4037</color>
+    <color name="game_fields_color_28">#4E342E</color>
+    <color name="game_fields_color_29">#3E2723</color>
+
+    <color name="game_fields_color_30">#FFCDD2</color>
+    <color name="game_fields_color_31">#EF9A9A</color>
+    <color name="game_fields_color_32">#EF5350</color>
+    <color name="game_fields_color_33">#E53935</color>
+    <color name="game_fields_color_34">#D32F2F</color>
+    <color name="game_fields_color_35">#C62828</color>
+    <color name="game_fields_color_36">#B71C1C</color>
+
+
+
+
 
 
     <color name="app_elements_color_1">#ffffff</color>
-    <color name="app_elements_color_2">#ffbebeb8</color>
-    <color name="app_elements_color_3">#3e2723</color>
-    <color name="app_elements_color_4">#212121</color>
 
-    <color name="game_fields_color_1">#bcaaa4</color>
-    <color name="game_fields_color_2">#b0bec5</color>
-    <color name="game_fields_color_3">#3e2723</color>
-    <color name="game_fields_color_4">#212121</color>
+    <color name="app_elements_color_2">#F5F5F5</color>
+    <color name="app_elements_color_3">#EEEEEE</color>
+    <color name="app_elements_color_4">#E0E0E0</color>
+    <color name="app_elements_color_5">#9E9E9E</color>
+    <color name="app_elements_color_6">#616161</color>
+    <color name="app_elements_color_7">#424242</color>
+    <color name="app_elements_color_8">#212121</color>
+
+    <color name="app_elements_color_9">#C5CAE9</color>
+    <color name="app_elements_color_10">#9FA8DA</color>
+    <color name="app_elements_color_11">#7986CB</color>
+    <color name="app_elements_color_12">#3F51B5</color>
+    <color name="app_elements_color_13">#303F9F</color>
+    <color name="app_elements_color_14">#283593</color>
+    <color name="app_elements_color_15">#1A237E</color>
+
+    <color name="app_elements_color_16">#B2DFDB</color>
+    <color name="app_elements_color_17">#80CBC4</color>
+    <color name="app_elements_color_18">#4DB6AC</color>
+    <color name="app_elements_color_19">#009688</color>
+    <color name="app_elements_color_20">#00796B</color>
+    <color name="app_elements_color_21">#00695C</color>
+    <color name="app_elements_color_22">#004D40</color>
+
+    <color name="app_elements_color_23">#D7CCC8</color>
+    <color name="app_elements_color_24">#BCAAA4</color>
+    <color name="app_elements_color_25">#A1887F</color>
+    <color name="app_elements_color_26">#795548</color>
+    <color name="app_elements_color_27">#5D4037</color>
+    <color name="app_elements_color_28">#4E342E</color>
+    <color name="app_elements_color_29">#3E2723</color>
+
+    <color name="app_elements_color_30">#FFCDD2</color>
+    <color name="app_elements_color_31">#EF9A9A</color>
+    <color name="app_elements_color_32">#EF5350</color>
+    <color name="app_elements_color_33">#E53935</color>
+    <color name="app_elements_color_34">#D32F2F</color>
+    <color name="app_elements_color_35">#C62828</color>
+    <color name="app_elements_color_36">#B71C1C</color>
+
+
+
+    <!--theme 1-->
+    <color name="theme1_background">#ffffff</color>
+    <color name="theme1_main">#212121</color>
+    <color name="theme1_fields">#212121</color>
+
+    <!--theme 2-->
+    <color name="theme2_background">#283593</color>
+    <color name="theme2_main">#1a237e</color>
+    <color name="theme2_fields">#5c6bc0</color>
+
+    <!--theme 3-->
+    <color name="theme3_background">#424242</color>
+    <color name="theme3_main">#212121</color>
+    <color name="theme3_fields">#212121</color>
+
+    <!--theme 4-->
+    <color name="theme4_background">#ffffff</color>
+    <color name="theme4_main">#e0e0e0</color>
+    <color name="theme4_fields">#eeeeee</color>
+
+    <!--theme 5-->
+    <color name="theme5_background">#00695C</color>
+    <color name="theme5_main">#004D40</color>
+    <color name="theme5_fields">#009688</color>
+
 
 
 </resources>

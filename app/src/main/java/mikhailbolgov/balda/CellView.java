@@ -2,6 +2,7 @@ package mikhailbolgov.balda;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ public class CellView extends TextView {
 
     public CellView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        setTextSize(TypedValue.COMPLEX_UNIT_SP, context.getResources().getDimension(R.dimen.game_field_letter_size));
     }
     public void setCell(Cell cell){
         this.cell = cell;

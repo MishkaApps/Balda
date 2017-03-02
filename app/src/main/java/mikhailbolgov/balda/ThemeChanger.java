@@ -69,7 +69,7 @@ public class ThemeChanger {
 
 
             if (view.getTag() == resources.getString(R.string.tagLinefulColor)) {
-                if (getBackgroundTextColor() == textColorDark)
+                if (getHeaderNFooterTextColor() == textColorDark)
                     view.setBackgroundColor(resources.getColor(R.color.absolutelyBlack));
                 else view.setBackgroundColor(resources.getColor(R.color.absolutelyWhite));
             }
@@ -132,7 +132,11 @@ public class ThemeChanger {
 
     private void setTextColor(ArrayList<View> backgroundChildren, ArrayList<View> headerNFooterChildren) {
 
+
         for (View view : backgroundChildren) {
+//            if(view.getTag() != null && view.getTag().equals(resources.getString(R.string.tag_exception)))
+//                continue;
+
             if (view.getClass() == TextView.class)
                 ((TextView) view).setTextColor(getBackgroundTextColor());
 
@@ -311,48 +315,69 @@ public class ThemeChanger {
         int backgroundTextColor = 0;
         int headerNFooterTextColor = 0;
         int gameFieldsTextColor = 0;
+        int selectedTheme = 0;
 
 
         if (tag.equals(resources.getString(R.string.theme1))) {
-            backgroundColor = resources.getColor(R.color.app_background_color_1);
-            elementsColor = resources.getColor(R.color.app_elements_color_4);
-            gameFieldsColor = resources.getColor(R.color.game_fields_color_4);
+            backgroundColor = resources.getColor(R.color.theme1_background);
+            elementsColor = resources.getColor(R.color.theme1_main);
+            gameFieldsColor = resources.getColor(R.color.theme1_fields);
 
             backgroundTextColor = resources.getColor(R.color.textColor);
             headerNFooterTextColor = resources.getColor(R.color.textColorWhite);
             gameFieldsTextColor = resources.getColor(R.color.textColorWhite);
 
-        } else if (tag.equals(resources.getString(R.string.theme1))) {
+            selectedTheme = 1;
 
-            backgroundColor = resources.getColor(R.color.app_background_color_2);
-            elementsColor = resources.getColor(R.color.app_elements_color_4);
-            gameFieldsColor = resources.getColor(R.color.game_fields_color_1);
+        } else if (tag.equals(resources.getString(R.string.theme2))) {
+
+            backgroundColor = resources.getColor(R.color.theme2_background);
+            elementsColor = resources.getColor(R.color.theme2_main);
+            gameFieldsColor = resources.getColor(R.color.theme2_fields);
 
             backgroundTextColor = resources.getColor(R.color.textColorWhite);
             headerNFooterTextColor = resources.getColor(R.color.textColorWhite);
-            gameFieldsTextColor = resources.getColor(R.color.textColor);
+            gameFieldsTextColor = resources.getColor(R.color.textColorWhite);
 
-        } else if (tag.equals(resources.getString(R.string.theme1))) {
+            selectedTheme = 2;
+        } else if (tag.equals(resources.getString(R.string.theme3))) {
 
-            backgroundColor = resources.getColor(R.color.app_background_color_4);
-            elementsColor = resources.getColor(R.color.app_elements_color_4);
-            gameFieldsColor = resources.getColor(R.color.game_fields_color_2);
-
-
-            backgroundTextColor = resources.getColor(R.color.textColorWhite);
-            headerNFooterTextColor = resources.getColor(R.color.textColor);
-            gameFieldsTextColor = resources.getColor(R.color.textColor);
-
-        } else if (tag.equals(resources.getString(R.string.theme1))) {
-
-            backgroundColor = resources.getColor(R.color.app_background_color_4);
-            elementsColor = resources.getColor(R.color.app_elements_color_2);
-            gameFieldsColor = resources.getColor(R.color.game_fields_color_1);
+            backgroundColor = resources.getColor(R.color.theme3_background);
+            elementsColor = resources.getColor(R.color.theme3_main);
+            gameFieldsColor = resources.getColor(R.color.theme3_fields);
 
 
             backgroundTextColor = resources.getColor(R.color.textColorWhite);
+            headerNFooterTextColor = resources.getColor(R.color.textColorWhite);
+            gameFieldsTextColor = resources.getColor(R.color.textColorWhite);
+
+            selectedTheme = 3;
+        } else if (tag.equals(resources.getString(R.string.theme4))) {
+
+            backgroundColor = resources.getColor(R.color.theme4_background);
+            elementsColor = resources.getColor(R.color.theme4_main);
+            gameFieldsColor = resources.getColor(R.color.theme4_fields);
+
+
+            backgroundTextColor = resources.getColor(R.color.textColor);
             headerNFooterTextColor = resources.getColor(R.color.textColor);
             gameFieldsTextColor = resources.getColor(R.color.textColor);
+
+
+            selectedTheme = 4;
+        } else if (tag.equals(resources.getString(R.string.theme5))) {
+
+            backgroundColor = resources.getColor(R.color.theme5_background);
+            elementsColor = resources.getColor(R.color.theme5_main);
+            gameFieldsColor = resources.getColor(R.color.theme5_fields);
+
+
+            backgroundTextColor = resources.getColor(R.color.textColorWhite);
+            headerNFooterTextColor = resources.getColor(R.color.textColorWhite);
+            gameFieldsTextColor = resources.getColor(R.color.textColorWhite);
+
+
+            selectedTheme = 5;
         }
 
         SharedPreferences.Editor editor = context.getSharedPreferences(resources.getString(R.string.shrdPrefsAppThemes), context.MODE_PRIVATE).edit();
@@ -363,6 +388,8 @@ public class ThemeChanger {
         editor.putInt(sharedPrefsBackgroundTextColorKey, backgroundTextColor);
         editor.putInt(sharedPrefsHeaderNFooterTextColorKey, headerNFooterTextColor);
         editor.putInt(sharedPrefsGameFieldsTextColorKey, gameFieldsTextColor);
+
+        editor.putInt(resources.getString(R.string.selectedTheme), selectedTheme);
         editor.apply();
 
     }

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -30,6 +31,7 @@ public class ExtendedSettingsActivity extends Activity implements View.OnClickLi
     private String sharedPrefsBackgroundKey, sharedPrefsHeaderNFooterKey, sharedPrefsGameFieldsKey, sharedPrefsBackgroundTextColorKey, sharedPrefsHeaderNFooterTextColorKey, sharedPrefsGameFieldsTextColorKey;
     private final int DEF_COLOR = 228;
     private ThemeChanger themeChanger;
+    private int blackTextColor, whiteTextColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,9 @@ public class ExtendedSettingsActivity extends Activity implements View.OnClickLi
         lytsGameFieldColor = new ArrayList<>();
         lytsGameFieldTextColor = new ArrayList<>();
 
+        blackTextColor = getResources().getColor(R.color.textColor);
+        whiteTextColor = getResources().getColor(R.color.textColorWhite);
+
         LinearLayout lytBackgroundColors = (LinearLayout) findViewById(R.id.lytAppSettingsBackgroundColors);
         for (int counter = 0; counter < lytBackgroundColors.getChildCount(); ++counter) {
             lytsBackgroundColor.add(new Color((RelativeLayout) lytBackgroundColors.getChildAt(counter)));
@@ -55,8 +60,11 @@ public class ExtendedSettingsActivity extends Activity implements View.OnClickLi
         }
 
         LinearLayout lytGameFieldColors = (LinearLayout) findViewById(R.id.lytAppSettingsGameFieldColors);
+        Color color;
         for (int counter = 0; counter < lytGameFieldColors.getChildCount(); ++counter) {
-            lytsGameFieldColor.add(new Color((RelativeLayout) lytGameFieldColors.getChildAt(counter)));
+            color = new Color((RelativeLayout) lytGameFieldColors.getChildAt(counter));
+            lytsGameFieldColor.add(color);
+            color.setLetterColor();
         }
 
         selectedBackgroundColor = lytsBackgroundColor.get(2);
@@ -228,6 +236,13 @@ public class ExtendedSettingsActivity extends Activity implements View.OnClickLi
 
         public String getTag() {
             return lyt.getChildAt(0).getTag().toString();
+        }
+
+        public void setLetterColor() {
+            if (lyt.getChildAt(0).getTag().equals(getResources().getString(R.string.tagTextBlack)))
+                ((TextView) lyt.getChildAt(1)).setTextColor(blackTextColor);
+            else
+                ((TextView) lyt.getChildAt(1)).setTextColor(whiteTextColor);
         }
     }
 
