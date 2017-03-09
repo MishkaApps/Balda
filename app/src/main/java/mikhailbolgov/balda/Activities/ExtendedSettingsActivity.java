@@ -8,8 +8,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -32,6 +34,7 @@ public class ExtendedSettingsActivity extends Activity implements View.OnClickLi
     private final int DEF_COLOR = 228;
     private ThemeChanger themeChanger;
     private int blackTextColor, whiteTextColor;
+    private boolean autoclick;                     // Для определения источника нажатия на цвет. Если нажатие программное тема не сбрасывается.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,8 @@ public class ExtendedSettingsActivity extends Activity implements View.OnClickLi
         lytsElementsColor = new ArrayList<>();
         lytsGameFieldColor = new ArrayList<>();
         lytsGameFieldTextColor = new ArrayList<>();
+
+
 
         blackTextColor = getResources().getColor(R.color.textColor);
         whiteTextColor = getResources().getColor(R.color.textColorWhite);
@@ -120,14 +125,25 @@ public class ExtendedSettingsActivity extends Activity implements View.OnClickLi
         selectedHeaderNFooterColor = lytsElementsColor.get(headerNFooterCounter);
         selectedGameFieldsColor = lytsGameFieldColor.get(gameFieldCounter);
 
+        autoclick = true;
+
         onClick(selectedBackgroundColor.lyt);
         onClick(selectedHeaderNFooterColor.lyt);
         onClick(selectedGameFieldsColor.lyt);
+
+        autoclick = false;
 
     }
 
     @Override
     public void onClick(View v) {
+
+        if (!autoclick) {
+            SharedPreferences.Editor editor = getSharedPreferences(getResources().getString(R.string.shrdPrefsAppThemes), MODE_PRIVATE).edit();
+            editor.putInt(getResources().getString(R.string.selectedTheme), 0);
+            editor.apply();
+        }
+
         for (Color color : lytsBackgroundColor) {
             if (v.getId() == color.getId()) {
                 selectedBackgroundColor.hideTick();
@@ -243,6 +259,10 @@ public class ExtendedSettingsActivity extends Activity implements View.OnClickLi
                 ((TextView) lyt.getChildAt(1)).setTextColor(blackTextColor);
             else
                 ((TextView) lyt.getChildAt(1)).setTextColor(whiteTextColor);
+        }
+
+        private View getView(){
+            return this.lyt;
         }
     }
 

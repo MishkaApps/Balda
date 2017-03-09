@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="cellBackground">#FFEBEE</color>
-    <color name="cell_in_focus_background_white_text">#2e7d32</color>
     <color name="cell_in_focus_background_dark_text">#a5d6a7</color>
+    <color name="cell_in_focus_background_white_text">#2e7d32</color>
     <!--<color name="inFocusBackground">#ffcce9c4</color>-->                     //old
     <color name="letter_added_in_word_dark_text">#9fa8da</color>
     <color name="letter_added_in_word_white_text">#5c6bc0</color>
@@ -38,7 +38,7 @@
     <color name="active_player_background_dark_text">#81c784</color>
     <color name="active_player_background_white_text">#2e7d32</color>
     <color name="not_active_player_background">@color/darkGrayAppColor</color>
-    <color name="wait_layout_background">#82ffffff</color>
+    <color name="wait_layout_background">#c8ffffff</color>
 
 
     <!--<color name="app_background_color_1">#ffffff</color>  // theme 1, theme 4-->
@@ -214,7 +214,7 @@
     <!--theme 2-->
     <color name="theme2_background">#283593</color>
     <color name="theme2_main">#1a237e</color>
-    <color name="theme2_fields">#5c6bc0</color>
+    <color name="theme2_fields">#7986CB</color>
 
     <!--theme 3-->
     <color name="theme3_background">#424242</color>

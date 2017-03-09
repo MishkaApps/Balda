@@ -16,6 +16,7 @@ tools:context="mikhailbolgov.balda.Activities.ExtendedSettingsActivity">
         android:layout_height="0dp"
         android:layout_weight="1">
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -24,6 +25,7 @@ tools:context="mikhailbolgov.balda.Activities.ExtendedSettingsActivity">
             android:textColor="@color/textColorWhite"
             android:textSize="@dimen/textSize1"
             android:textStyle="bold" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -33,11 +35,522 @@ tools:context="mikhailbolgov.balda.Activities.ExtendedSettingsActivity">
         android:layout_weight="8"
         android:orientation="vertical">
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.6"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/buttons_headers_color"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/textSize2"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:scrollbars="none"
+            android:id="@+id/scrllytMainColor">
+
+            <LinearLayout
+                android:id="@+id/lytAppSettingsHeaderNFooterColors"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_1"
+                        android:tag="@string/tagTextBlack" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_2">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_2"
+                        android:tag="@string/tagTextBlack" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_3"
+                        android:tag="@string/tagTextBlack" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_4"
+                        android:tag="@string/tagTextBlack" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_5"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_6">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_6"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_7">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_7"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_8">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_8"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_9">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_9"
+                        android:tag="@string/tagTextBlack" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_10">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_10"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_11">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_11"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_12">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_12"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_13">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_13"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_14">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_14"
+                        android:tag="@string/tagTextWhite" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_15">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_15"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_16">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_16"
+                        android:tag="@string/tagTextBlack" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_17">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_17"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_18">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_18"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_19">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_19"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_20">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_20"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_21">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_21"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_22">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_22"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_23">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_23"
+                        android:tag="@string/tagTextBlack" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_24">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_24"
+                        android:tag="@string/tagTextBlack" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_25">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_25"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_26">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_26"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_27">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_27"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_28">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_28"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_29">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_29"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_30">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_30"
+                        android:tag="@string/tagTextBlack" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_31">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_31"
+                        android:tag="@string/tagTextBlack" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_32">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_32"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_33">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_33"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_34">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_34"
+                        android:tag="@string/tagTextWhite" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_35">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_35"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/colorViewWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/app_elements_color_36">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_elements_color_36"
+                        android:tag="@string/tagTextWhite" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
             android:gravity="center"
             android:text="@string/background_color"
             android:textColor="@color/textColorWhite"
@@ -48,7 +561,7 @@ tools:context="mikhailbolgov.balda.Activities.ExtendedSettingsActivity">
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.4"
             android:scrollbars="none">
 
             <LinearLayout
@@ -540,522 +1053,14 @@ tools:context="mikhailbolgov.balda.Activities.ExtendedSettingsActivity">
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.5"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0.6"
-            android:gravity="center"
-            android:text="@string/buttons_headers_color"
-            android:textColor="@color/textColorWhite"
-            android:textSize="@dimen/textSize2"
-            android:textStyle="bold" />
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:scrollbars="none">
-
-            <LinearLayout
-                android:id="@+id/lytAppSettingsHeaderNFooterColors"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_1">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_1"
-                        android:tag="@string/tagTextBlack" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_2">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_2"
-                        android:tag="@string/tagTextBlack" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_3">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_3"
-                        android:tag="@string/tagTextBlack" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_4">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_4"
-                        android:tag="@string/tagTextBlack" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_5">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_5"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_6">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_6"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_7">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_7"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_8">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_8"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_9">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_9"
-                        android:tag="@string/tagTextBlack" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_10">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_10"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_11">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_11"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_12">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_12"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_13">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_13"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_14">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_14"
-                        android:tag="@string/tagTextWhite" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_15">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_15"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_16">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_16"
-                        android:tag="@string/tagTextBlack" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_17">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_17"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_18">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_18"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_19">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_19"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_20">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_20"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_21">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_21"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_22">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_22"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_23">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_23"
-                        android:tag="@string/tagTextBlack" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_24">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_24"
-                        android:tag="@string/tagTextBlack" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_25">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_25"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_26">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_26"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_27">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_27"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_28">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_28"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_29">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_29"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_30">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_30"
-                        android:tag="@string/tagTextBlack" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_31">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_31"
-                        android:tag="@string/tagTextBlack" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_32">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_32"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_33">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_33"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_34">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_34"
-                        android:tag="@string/tagTextWhite" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_35">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_35"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="@dimen/colorViewWidth"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/app_elements_color_36">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/app_elements_color_36"
-                        android:tag="@string/tagTextWhite" />
-                </RelativeLayout>
-
-            </LinearLayout>
-        </HorizontalScrollView>
-
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.7"/>
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.6"
+            android:layout_weight="0.8"
             android:gravity="center"
             android:text="@string/game_fields_color"
             android:textColor="@color/textColorWhite"
@@ -1066,7 +1071,7 @@ tools:context="mikhailbolgov.balda.Activities.ExtendedSettingsActivity">
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.4"
             android:scrollbars="none">
 
             <LinearLayout

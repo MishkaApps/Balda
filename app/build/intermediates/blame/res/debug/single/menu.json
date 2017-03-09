@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\menu\\themes_menu.xml",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\menu\\themes_menu.xml"
+    },
+    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\menu\\settings_menu.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\menu\\settings_menu.xml"
     }

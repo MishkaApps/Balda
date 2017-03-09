@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="settings_activity_space_size_h">20dp</dimen>
+    <dimen name="settings_activity_players_text_view">30dp</dimen>
+
+    <dimen name="textSize1">20dp</dimen>
+    <dimen name="textSize2">16dp</dimen>
+    <dimen name="textSize3">14dp</dimen>
+    <dimen name="letter_B_size">32dp</dimen>
+
+    <dimen name="game_field_letter_size">7sp</dimen>
+
+    <dimen name="colorViewWidth">100dp</dimen>
+</resources>

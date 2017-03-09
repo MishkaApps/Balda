@@ -215,7 +215,7 @@
     <color name="theme1_fields">#212121</color>
     <color name="theme1_main">#212121</color>
     <color name="theme2_background">#283593</color>
-    <color name="theme2_fields">#5c6bc0</color>
+    <color name="theme2_fields">#7986CB</color>
     <color name="theme2_main">#1a237e</color>
     <color name="theme3_background">#424242</color>
     <color name="theme3_fields">#212121</color>
@@ -227,7 +227,7 @@
     <color name="theme5_fields">#009688</color>
     <color name="theme5_main">#004D40</color>
     <color name="transparent">#ffffff</color>
-    <color name="wait_layout_background">#82ffffff</color>
+    <color name="wait_layout_background">#c8ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ActionMenuItemView"><attr name="android:minWidth"/></declare-styleable>
@@ -355,8 +355,8 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <integer name="gameFieldVibrationDuration">15</integer>
-    <integer name="keyboardVibrationDuration">15</integer>
+    <integer name="gameFieldVibrationDuration">8</integer>
+    <integer name="keyboardVibrationDuration">8</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -416,6 +416,7 @@
     <string name="menu_item_about_app">О приложении</string>
     <string name="menu_item_app_rules">Правила</string>
     <string name="menu_item_app_settings">Настройки</string>
+    <string name="menu_item_extended">Расширенные настройки</string>
     <string name="menu_item_user_voc">Словарь пользователя</string>
     <string name="minutes">МИНУТ</string>
     <string name="permanentTextColorTag">PERM_COLOR</string>

@@ -145,10 +145,11 @@ public class ThemeChanger {
         }
 
         for (View view : headerNFooterChildren) {
-            if (view.getClass() == TextView.class)
+            if (view.getClass() == TextView.class | view.getClass() == Timer.class)
                 ((TextView) view).setTextColor(getHeaderNFooterTextColor());
             if (view.getClass() == Button.class)
                 ((Button) view).setTextColor(getHeaderNFooterTextColor());
+
         }
 
 

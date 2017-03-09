@@ -602,7 +602,7 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
 
         if (keyboard.isKey(v)) {
             onKeyClick(((Button) v).getText().charAt(0));
-            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(30);
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(getResources().getInteger(R.integer.gameFieldVibrationDuration));
             if (inFocus == tvFirstWord)
                 if (tvFirstWord.getText().length() == 5) {
                     inFocus.setBackgroundResource(textViewBackground);
@@ -817,7 +817,12 @@ public class SettingsActivity extends FragmentActivity implements OnClickListene
         if (backgroundColor == DEF_VALUE || headerNFooterColor == DEF_VALUE || gameFieldColor == DEF_VALUE
                 || backgroundTextColor == DEF_VALUE || headerNFooterTextColor == DEF_VALUE || gameFieldTextColor == DEF_VALUE) {
 
-            themeChanger.rememberPresetTheme(getResources().getString(R.string.theme1));
+            themeChanger.rememberPresetTheme(getResources().getString(R.string.theme3));
+
+
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putBoolean(getResources().getString(R.string.shrdPrefsFontBold),true);
+            editor.apply();
 
 
 //

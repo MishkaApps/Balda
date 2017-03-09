@@ -64,6 +64,10 @@
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\theme4.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\theme4.png"
+    },
+    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_text_cursor_material.xml"
     },
@@ -104,6 +108,10 @@
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\theme3.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\theme3.png"
+    },
+    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
@@ -138,6 +146,10 @@
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_white.png",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\checkbox_white.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\theme1.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\theme1.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\launch_icon.png",
@@ -208,6 +220,10 @@
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\theme5.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\theme5.png"
+    },
+    {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
         "source": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
@@ -226,6 +242,10 @@
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\color_choose_dark.png",
         "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\color_choose_dark.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\theme2.png",
+        "source": "C:\\Android_Projects\\Balda\\app\\src\\main\\res\\drawable\\theme2.png"
     },
     {
         "merged": "C:\\Android_Projects\\Balda\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",

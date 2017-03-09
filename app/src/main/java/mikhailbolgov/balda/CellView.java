@@ -40,7 +40,13 @@ public class CellView extends TextView {
         ViewGroup.LayoutParams newParams =  getLayoutParams();
         newParams.width = h;
         setLayoutParams(newParams);
+    }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int height = getMeasuredHeight();
+        setMeasuredDimension(height, height);
     }
 
     public void hide(){
